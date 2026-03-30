@@ -1,0 +1,53 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="/">{{ site.title }}</a>
+    </div>
+    <div class="navbar-links">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/archive">Archive</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a href="/projects/darkmech"><small>Dark Mechanicum</small></a>
+            <a href="#"><small>The Expiators</small></a>
+            <a href="#"><small>Ferrifractor Cartel</small></a>
+            <a href="#"><small>Flesh Eater Courts</small></a>
+            <!-- <a href="#">Link 3</a> -->
+          </div>
+        </li>
+        <!-- <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+// Toggle mobile menus
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".navbar-links ul");
+  const dropdowns = document.querySelectorAll(".navbar-links li.dropdown");
+
+  // Top-level hamburger
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  // Nested dropdowns
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        e.stopPropagation(); // prevent parent menu toggle
+        dropdown.classList.toggle("open");
+      }
+    });
+  });
+});
+</script>

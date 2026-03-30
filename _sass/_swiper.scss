@@ -1,0 +1,23 @@
+/* Swiper Pagination Bullets */
+.swiper-pagination-bullet {
+  width: 12px !important;  /* Larger bullet size */
+  height: 12px !important;
+  background-color: #808080 !important; /* Inactive bullets */
+  opacity: 0.7 !important;
+  margin: 0 6px !important; /* Spacing between bullets */
+  border-radius: 50% !important; /* Circle shape */
+  transition: all 0.3s ease !important;
+}
+
+/* Active Bullet */
+.swiper-pagination-bullet-active {
+  background-color: #9a022e !important; /* Active bullet in red */
+  width: 14px !important;  /* Slightly larger for emphasis */
+  height: 14px !important;
+  opacity: 1 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #9a022e !important;
+}

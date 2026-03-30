@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>- bl3ak Miniatures -</title>
+  <script src="/assets/js/search.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="shortcut icon" type="image/favicon" href="/assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a href="/">=][=</a>
+    </div>
+    <div class="navbar-links">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/archive">Archive</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a href="/projects/darkmech"><small>Dark Mechanicum</small></a>
+            <a href="#"><small>The Expiators</small></a>
+            <a href="#"><small>Ferrifractor Cartel</small></a>
+            <a href="#"><small>Flesh Eater Courts</small></a>
+            <!-- <a href="#">Link 3</a> -->
+          </div>
+        </li>
+        <!-- <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+// Toggle mobile menus
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".navbar-links ul");
+  const dropdowns = document.querySelectorAll(".navbar-links li.dropdown");
+
+  // Top-level hamburger
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  // Nested dropdowns
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        e.stopPropagation(); // prevent parent menu toggle
+        dropdown.classList.toggle("open");
+      }
+    });
+  });
+});
+</script>
+
+  <div class="container">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<div class="blank-block"></div>
+<h2 style="text-align: center;">++ FEATURED TRANSMISSIONS ++</h2>
+<div class="swiper featured-swiper">
+  <div class="swiper-wrapper">
+    
+      <div class="swiper-slide">
+        <a href="/2026/03/01/ferrifractor-cartel.html" class="featured-post">
+
+          <img
+            class="featured-post"
+            src="/assets/img/krieg.jpg"
+            alt="Building the Ferrifractor Cartel"
+            loading="lazy"
+          >
+
+          <div class="overlay">
+            <h3>Building the Ferrifractor Cartel</h3>
+          </div>
+          
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </a>
+      </div>
+    
+      <div class="swiper-slide">
+        <a href="/2026/01/01/test-post-14.html" class="featured-post">
+
+          <img
+            class="featured-post"
+            src="/assets/img/blanche1.jpg"
+            alt="Test Post 14"
+            loading="lazy"
+          >
+
+          <div class="overlay">
+            <h3>Test Post 14</h3>
+          </div>
+          
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </a>
+      </div>
+    
+      <div class="swiper-slide">
+        <a href="/2026/01/01/test-post-4.html" class="featured-post">
+
+          <img
+            class="featured-post"
+            src="/assets/img/blanche2.jpg"
+            alt="Test Post 7"
+            loading="lazy"
+          >
+
+          <div class="overlay">
+            <h3>Test Post 7</h3>
+          </div>
+          
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </a>
+      </div>
+    
+      <div class="swiper-slide">
+        <a href="/2026/01/01/test-post-3.html" class="featured-post">
+
+          <img
+            class="featured-post"
+            src="/assets/img/blanche1.jpg"
+            alt="Test Post 8"
+            loading="lazy"
+          >
+
+          <div class="overlay">
+            <h3>Test Post 8</h3>
+          </div>
+          
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </a>
+      </div>
+    
+      <div class="swiper-slide">
+        <a href="/2026/01/01/test-post-2.html" class="featured-post">
+
+          <img
+            class="featured-post"
+            src="/assets/img/blanche1.jpg"
+            alt="Test Post 1"
+            loading="lazy"
+          >
+
+          <div class="overlay">
+            <h3>Test Post 1</h3>
+          </div>
+          
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </a>
+      </div>
+    
+      <div class="swiper-slide">
+        <a href="/2026/01/01/test-post-1.html" class="featured-post">
+
+          <img
+            class="featured-post"
+            src="/assets/img/blanche4.png"
+            alt="Test Post 2"
+            loading="lazy"
+          >
+
+          <div class="overlay">
+            <h3>Test Post 2</h3>
+          </div>
+          
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </a>
+      </div>
+    
+
+  </div>
+<div class="swiper-pagination" style="color: #fff;"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  new Swiper('.featured-swiper', {
+
+    slidesPerView: 1,
+    spaceBetween: 16,
+    grabCursor: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 1
+      }
+    }
+
+  });
+
+});
+</script>
+
+<style>
+
+.featured-swiper {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.featured-post {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.featured-post img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.05)
+  );
+}
+
+.overlay h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.50rem;
+}
+
+</style>
+
+<div class="blank-block"></div>
+<p style="display: none;"></p>
+
+<h2 style="text-align: center;"></h2>
+
+
+<div class="typewriter">
+  <p style="text-align: center;">++ INCOMING TRANSMISSIONS ++</p>
+  <p style="text-align: center;">++ RECEIVING CONTENT ++</p>
+  <p style="text-align: center;">++ STREAM CIPHER: A1E3-7 ++</p>
+  <p style="text-align: center;">++ ANALYSING DATA ++</p>
+  <p style="text-align: center;">++ FORMATTING CONTENT ++</p>
+  <p style="text-align: center;"></p>
+</div>
+
+<div class="blank-block"></div>
+<h2 style="text-align: center;">++ LATEST TRANSMISSION++</h2>
+<br>
+
+<div class="jumbotron">
+  <a href="/2026/03/01/ferrifractor-cartel.html">
+    <img src="/assets/img/krieg.jpg" alt="Building the Ferrifractor Cartel">
+    <div class="jumbotron-overlay">
+      <div class="jumbotron-content">
+        <h1>Building the Ferrifractor Cartel</h1>
+        <p>
+          Once upon a time…
+
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<p class="blank-block"></p>
+<h1 style="text-align: center; margin-bottom: 5px;">=][=</h1>
+<p class="blank-block"></p>
+
+
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/03/01/ferrifractor-cartel.html">
+    <img src="/assets/img/krieg.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/03/01/ferrifractor-cartel.html">Building the Ferrifractor Cartel</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/01/01/test-post-14.html">
+    <img src="/assets/img/blanche1.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/01/01/test-post-14.html">Test Post 14</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/01/01/test-post-13.html">
+    <img src="/assets/img/blanche2.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/01/01/test-post-13.html">Test Post 13</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/01/01/test-post-12.html">
+    <img src="/assets/img/blanche1.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/01/01/test-post-12.html">Test Post 12</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/01/01/test-post-11.html">
+    <img src="/assets/img/blanche1.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/01/01/test-post-11.html">Test Post 6</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/01/01/test-post-10.html">
+    <img src="/assets/img/blanche4.png" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/01/01/test-post-10.html">Test Post 7</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/01/01/test-post-9.html">
+    <img src="/assets/img/krieg.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/01/01/test-post-9.html">Test Post 8</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/01/01/test-post-8.html">
+    <img src="/assets/img/blanche1.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/01/01/test-post-8.html">Test Post 3</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+
+
+
+<p class="blank-block"></p>
+<h1 style="text-align: center; margin-bottom: 5px;">=][=</h1>
+<p class="blank-block"></p>
+  </div>
+  
+<div class="container" style="text-align: center;">
+
+    <footer>
+      <br>
+      <i>All Rights Reserved &copy; 2026 =][= Website Design by bl3ak</i><p></p>
+
+      <p><small>This web site is completely unofficial and in no way endorsed by Games Workshop Limited.</small></p>
+
+      <p><small>Adeptus Astartes, Battlefleet Gothic, Black Flame, Black Library, the Black Library logo, BL Publishing, Blood Angels, Bloodquest, Blood Bowl, the Blood Bowl logo, The Blood Bowl Spike Device, Cadian, Catachan, the Chaos device, Cityfight, the Chaos logo, Citadel, Citadel Device, City of the Damned, Codex, Daemonhunters, Dark Angels, Dark Eldar, Dark Future, the Double-Headed/Imperial Eagle device, 'Eavy Metal, Eldar, Eldar symbol devices, Epic, Eye of Terror, Fanatic, the Fanatic logo, the Fanatic II logo, Fire Warrior, Forge World, Games Workshop, Games Workshop logo, Genestealer, Golden Demon, Gorkamorka, Great Unclean One, the Hammer of Sigmar logo, Horned Rat logo, Inferno, Inquisitor, the Inquisitor logo, the Inquisitor device, Inquisitor:Conspiracies, Keeper of Secrets, Khemri, Khorne, Kroot, Lord of Change, Marauder, Mordheim, the Mordheim logo, Necromunda, Necromunda stencil logo, Necromunda Plate logo, Necron, Nurgle, Ork, Ork skull devices, Sisters of Battle, Skaven, the Skaven symbol devices, Slaanesh, Space Hulk, Space Marine, Space Marine chapters, Space Marine chapter logos, Talisman, Tau, the Tau caste designations, Tomb Kings, Trio of Warriors, Twin Tailed Comet Logo, Tyranid, Tyrannid, Tzeentch, Ultramarines, Warhammer, Warhammer Historical, Warhammer Online, Warhammer 40k Device, Warhammer World logo, Warmaster, White Dwarf, the White Dwarf logo, and all associated marks, names, races, race insignia, characters, vehicles, locations, units, illustrations and images from the Blood Bowl game, the Warhammer world, the Talisman world, and the Warhammer 40,000 universe are either ®, TM and/or © Copyright Games Workshop Ltd 2000-2014, variably registered in the UK and other countries around the world. Used without permission. No challenge to their status intended. All Rights Reserved to their respective owners.</small></p>
+    </footer>
+  </div>
+
+<div class="footer-block"></div>
+
+<section class="parallax"></section>
+
+<script>
+  // Initialize AOS after DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      offset: 0,
+      duration: 600,
+      easing: 'ease-out-cubic',
+      once: true,
+      mirror: true,
+      anchorPlacement: 'top-bottom'
+    });
+    
+    // Force refresh multiple times to ensure detection
+    setTimeout(function() { AOS.refresh(); }, 100);
+    setTimeout(function() { AOS.refresh(); }, 500);
+  });
+  
+  // Also refresh on scroll
+  let scrollTimeout;
+  window.addEventListener('scroll', function() {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(function() {
+      AOS.refresh();
+    }, 50);
+  });
+</script>
+
+</body>
+</html>

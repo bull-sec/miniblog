@@ -1,0 +1,20 @@
+/* Color Palette */
+$primary-color: #8a0909;        /* Red-ish primary */
+$secondary-color: #FFC107;      /* Amber */
+$background-color: #0c0c0c;     /* Dark grey */
+$surface-color: #373737;        /* Slightly lighter grey */
+$on-primary-color: #fff;        /* White text on primary */
+$on-secondary-color: #000;      /* Black text on secondary */
+$on-background-color: #fff;     /* White text on background */
+$on-surface-color: #fff;        /* White text on surface */
+
+/* Fonts */
+$font-family-base: "Cinzel", serif;
+
+/* Card / Border Radius */
+$border-radius: 6px;
+
+/* Breakpoints */
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 900px;
+$breakpoint-small: 600px;

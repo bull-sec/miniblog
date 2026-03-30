@@ -1,0 +1,13 @@
+title: =][=
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sass-converter
+  - jekyll-feed
+
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: /blog/:num/
+  sort_field: date
+  sort_reverse: true

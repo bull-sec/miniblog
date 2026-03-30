@@ -1,0 +1,80 @@
+/* Typewriter Effect */
+.typewriter p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.typewriter p:nth-child(2){
+  animation-delay: 1.5s; /* Adjust delay as needed */
+}
+
+.typewriter p:nth-child(3){
+  animation-delay: 3s; /* Adjust delay as needed */
+}
+
+.typewriter p:nth-child(4) {
+  animation-delay: 4.5s; /* Adjust delay as needed */
+}
+
+.typewriter p:nth-child(5) {
+  animation-delay: 6s; /* Adjust delay as needed */
+}
+
+.typewriter p:nth-child(6) {
+  animation-delay: 7.5s; /* Adjust delay as needed */
+}
+
+.typewriter p:nth-child(7) {
+  animation-delay: 10s; /* Adjust delay as needed */
+}
+
+.typewriter p:nth-child(8) {
+  animation-delay: 12s; /* Adjust delay as needed */
+}
+
+.typewriter p:nth-child(9) {
+  animation-delay: 13.0s; /* Adjust delay as needed */
+}
+
+/* Typewriter2 Effect */
+.typewriter2 p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.typewriter2 p:nth-child(1){
+  animation-delay: 13s; /* Adjust delay as needed */
+}
+
+.typewriter2 p:nth-child(2){
+  animation-delay: 14s; /* Adjust delay as needed */
+}
+
+.typewriter2 p:nth-child(3) {
+  animation-delay: 15.5s; /* Adjust delay as needed */
+}
+
+.typewriter2 p:nth-child(4) {
+  animation-delay: 17s; /* Adjust delay as needed */
+}
+
+.typewriter2 p:nth-child(5) {
+  animation-delay: 18.5s; /* Adjust delay as needed */
+}
+
+.typewriter2 p:nth-child(6) {
+  animation-delay: 20s; /* Adjust delay as needed */
+}
+
+.typewriter2 p:nth-child(7) {
+  animation-delay: 21.5s; /* Adjust delay as needed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

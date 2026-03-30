@@ -1,0 +1,174 @@
+---
+layout: default
+title:  '- bl3ak Miniatures -'
+---
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<div class="blank-block"></div>
+<h2 style="text-align: center;">++ FEATURED TRANSMISSIONS ++</h2>
+<div class="swiper featured-swiper">
+  <div class="swiper-wrapper">
+    {% for post in site.tags.featured limit:6 %}
+      <div class="swiper-slide">
+        <a href="{{ post.url }}" class="featured-post">
+
+          <img
+            class="featured-post"
+            src="{{ post.image }}"
+            alt="{{ post.title }}"
+            loading="lazy"
+          >
+
+          <div class="overlay">
+            <h3>{{ post.title }}</h3>
+          </div>
+          
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+        </a>
+      </div>
+    {% endfor %}
+
+  </div>
+<div class="swiper-pagination" style="color: #fff;"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  new Swiper('.featured-swiper', {
+
+    slidesPerView: 1,
+    spaceBetween: 16,
+    grabCursor: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 1
+      }
+    }
+
+  });
+
+});
+</script>
+
+<style>
+
+.featured-swiper {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.featured-post {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.featured-post img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.05)
+  );
+}
+
+.overlay h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.50rem;
+}
+
+</style>
+
+<div class="blank-block"></div>
+<p style="display: none;"></p>
+
+<h2 style="text-align: center;"></h2>
+
+
+<div class="typewriter">
+  <p style="text-align: center;">++ INCOMING TRANSMISSIONS ++</p>
+  <p style="text-align: center;">++ RECEIVING CONTENT ++</p>
+  <p style="text-align: center;">++ STREAM CIPHER: A1E3-7 ++</p>
+  <p style="text-align: center;">++ ANALYSING DATA ++</p>
+  <p style="text-align: center;">++ FORMATTING CONTENT ++</p>
+  <p style="text-align: center;"></p>
+</div>
+
+<div class="blank-block"></div>
+<h2 style="text-align: center;">++ LATEST TRANSMISSION++</h2>
+<br>
+{% assign latest = site.posts.first %}
+<div class="jumbotron">
+  <a href="{{ latest.url }}">
+    <img src="{{ latest.image }}" alt="{{ latest.title }}">
+    <div class="jumbotron-overlay">
+      <div class="jumbotron-content">
+        <h1>{{ latest.title }}</h1>
+        <p>
+          {{ latest.excerpt | strip_html | truncate: 40 }}
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<p class="blank-block"></p>
+<h1 style="text-align: center; margin-bottom: 5px;">{{ site.title }}</h1>
+<p class="blank-block"></p>
+
+
+{% for post in site.posts limit:8 %}
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="{{ post.url }}">
+    <img src="{{ post.image }}" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="{{ post.url }}">{{ post.title }}</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+{% endfor %}
+
+
+
+<p class="blank-block"></p>
+<h1 style="text-align: center; margin-bottom: 5px;">{{ site.title }}</h1>
+<p class="blank-block"></p>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: blank }}</title>
+  <script src="/assets/js/search.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="shortcut icon" type="image/favicon" href="/assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+{% include header.html %}
+
+  <div class="container">
+    {{ content }}
+  </div>
+  
+{% include footer.html %}
+
+<section class="parallax"></section>
+
+<script>
+  // Initialize AOS after DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      offset: 0,
+      duration: 600,
+      easing: 'ease-out-cubic',
+      once: true,
+      mirror: true,
+      anchorPlacement: 'top-bottom'
+    });
+    
+    // Force refresh multiple times to ensure detection
+    setTimeout(function() { AOS.refresh(); }, 100);
+    setTimeout(function() { AOS.refresh(); }, 500);
+  });
+  
+  // Also refresh on scroll
+  let scrollTimeout;
+  window.addEventListener('scroll', function() {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(function() {
+      AOS.refresh();
+    }, 50);
+  });
+</script>
+
+</body>
+</html>

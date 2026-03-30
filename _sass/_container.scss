@@ -1,0 +1,26 @@
+/* Site-wide container */
+.container {
+  max-width: 1200px;   /* same as before */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .site-container {
+    padding: 0 10px;
+  }
+
+  .parallax {
+    min-height: 60vh; // less tall on mobile
+  }
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1200px; // same as your previous site
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}

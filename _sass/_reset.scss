@@ -1,0 +1,42 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $font-family-base;
+  min-height: 100%;
+  background-color: $background-color;
+  color: $on-background-color;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $on-background-color;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: $border-radius;
+}
+
+html, body {
+
+  overflow-x: hidden;
+
+}
+
+.small {
+  font-size: 0.6em !important;
+}
