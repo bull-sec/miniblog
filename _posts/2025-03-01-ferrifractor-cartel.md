@@ -6,7 +6,6 @@ tags:
   - hobby
   - warhammer
   - modelling
-  - featured
   - nurgle
   - deathguard
   - 40k

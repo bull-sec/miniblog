@@ -11,3 +11,8 @@ pagination:
   permalink: /blog/:num/
   sort_field: date
   sort_reverse: true
+
+gallery_tags:
+  - fantasy
+  - sci-fi
+  - vehicles

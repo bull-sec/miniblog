@@ -111,6 +111,11 @@
   margin-top: 40px;
 }
 
+.tag-filter.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* ============================= */
 /* Mobile layout fixes           */
 /* ============================= */

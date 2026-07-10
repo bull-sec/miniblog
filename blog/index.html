@@ -2,7 +2,7 @@
 layout: default
 title: Blog
 pagination:
-  enabled: true
+  enabled: false
 ---
 
 <p class="blank-block"></p>
@@ -20,7 +20,7 @@ pagination:
     <!-- POSTS -->
     <main class="blog-posts">
 
-      {%- for post in paginator.posts -%}
+      {%- for post in site.posts -%}
 
       <article class="blog-card"
                data-tags="{{ post.tags | join: ', ' | downcase }}">
@@ -52,25 +52,26 @@ pagination:
       </article>
       {%- endfor -%}
     <!-- PAGINATION -->
-    <div class="pagination">
-      {% if paginator.previous_page %}
+    <!-- <div class="pagination">
+      {% if site.previous_page %}
         <a
-          href="{{ paginator.previous_page_path }}"
+          href="{{ site.previous_page_path }}"
           class="prev">
           &laquo; Previous
         </a>
       {% endif %}
 
-      {% if paginator.next_page %}
+      {% if site.next_page %}
         <a
-          href="{{ paginator.next_page_path }}"
+          href="{{ site.next_page_path }}"
           class="next">
           Next &raquo;
         </a>
       {% endif %}
     </div>
-    </main>
+  
     <!-- SIDEBAR -->
+    </main>
     <aside class="blog-sidebar">
       <div class="search-article">
         <h3>Search</h3>
@@ -90,9 +91,18 @@ pagination:
       <div class="archive-tags">
         <h3>Tags</h3>
         <ul>
+          <li class="tag-item">
+            <a href="#"
+               class="tag-filter"
+               data-tag="all">
+                All Posts
+            </a>
+        </li>
           {% for tag in site.tags %}
           <li class="tag-item">
-            <a href="/tags/{{ tag[0] }}">
+            <a href="#"
+              class="tag-filter"
+              data-tag="{{ tag[0] | downcase }}">
               {{ tag[0] }}
             </a>
           </li>
@@ -122,3 +132,38 @@ pagination:
   {{ site.title }}
 </h1>
 <p class="blank-block"></p>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filters = document.querySelectorAll(".tag-filter");
+    const posts = document.querySelectorAll(".blog-card");
+
+    filters.forEach(filter => {
+        
+        filter.addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            const tag = this.dataset.tag;
+
+            posts.forEach(post => {
+
+                const tags = post.dataset.tags
+                    .split(",")
+                    .map(t => t.trim());
+
+                if (tag === "all" || tags.includes(tag)) {
+                    post.style.display = "";
+                } else {
+                    post.style.display = "none";
+                }
+
+            });
+
+        });
+
+    });
+
+});
+</script>
