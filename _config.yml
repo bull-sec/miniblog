@@ -4,6 +4,8 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-sass-converter
   - jekyll-feed
+  - jekyll-og-image
+  - jekyll-seo-tag
 
 pagination:
   enabled: true

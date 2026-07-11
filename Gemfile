@@ -9,8 +9,8 @@ group :jekyll_plugins do
   gem 'jekyll-feed'
   gem "rake"
   gem "bigdecimal"
-  gem "jekyll-seo-tag"
   gem "jekyll-og-image"
+  gem "jekyll-seo-tag"
 end
 
 # gem "rails"
