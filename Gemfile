@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem "rake"
   gem "bigdecimal"
   gem "jekyll-seo-tag"
+  gem "jekyll-og-image"
 end
 
 # gem "rails"
