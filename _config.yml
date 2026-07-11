@@ -25,6 +25,9 @@ og_image:
   collections: ["posts", "pages"]
   output_dir: "assets/images/og"
   domain: "beta.bl3ak.com"
+  canvas:
+    width: 1200
+    height: 630
   border_bottom:
     width: 20
     fill:
