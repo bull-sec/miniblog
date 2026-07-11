@@ -16,3 +16,12 @@ gallery_tags:
   - fantasy
   - sci-fi
   - vehicles
+
+og_image:
+  collections: ["posts", "pages"]
+  output_dir: "assets/images/og"
+  domain: "igor.works"
+  border_bottom:
+    width: 20
+    fill:
+      - "#4285F4"
