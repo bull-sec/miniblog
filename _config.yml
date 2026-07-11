@@ -1,4 +1,6 @@
 title: =][=
+url: "https://beta.bl3ak.com"
+baseurl: ""
 
 plugins:
   - jekyll-paginate-v2
