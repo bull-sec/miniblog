@@ -199,5 +199,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+  new Swiper('.featured-swiper', {
+
+    slidesPerView: 1,
+    spaceBetween: 16,
+    grabCursor: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+      640: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 1
+      }
+    }
+
+  });
+
+});
+
 enableCentreHighlight(".gallery-item");
 enableCentreHighlight(".blog-card");
