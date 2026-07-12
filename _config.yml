@@ -11,7 +11,7 @@ plugins:
   - jekyll-seo-tag
 
 pagination:
-  enabled: true
+  enabled: false
   per_page: 6
   permalink: /blog/:num/
   sort_field: date
