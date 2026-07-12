@@ -4,6 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <script src="/assets/js/site.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>- bl3ak Miniatures -</title>
@@ -189,6 +190,38 @@ document.addEventListener("DOMContentLoaded", () => {
           <li class="tag-item">
             <a href="#"
               class="tag-filter"
+              data-tag="skaven">
+              skaven
+            </a>
+          </li>
+          
+          <li class="tag-item">
+            <a href="#"
+              class="tag-filter"
+              data-tag="aos">
+              aos
+            </a>
+          </li>
+          
+          <li class="tag-item">
+            <a href="#"
+              class="tag-filter"
+              data-tag="grimdark">
+              grimdark
+            </a>
+          </li>
+          
+          <li class="tag-item">
+            <a href="#"
+              class="tag-filter"
+              data-tag="mordheim">
+              mordheim
+            </a>
+          </li>
+          
+          <li class="tag-item">
+            <a href="#"
+              class="tag-filter"
               data-tag="hobby">
               hobby
             </a>
@@ -226,11 +259,34 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
           </li>
           
+          <li class="tag-item">
+            <a href="#"
+              class="tag-filter"
+              data-tag="blanchitsu">
+              blanchitsu
+            </a>
+          </li>
+          
         </ul>
       </div>
 
 <div class="blank-block"></div>
 <div class="gallery-container">
+    
+        
+        <div class="gallery-item"
+             data-tags="grimdark, blanchitsu, warhammer">
+            <a href="/2026/07/08/rip-john-blanche.html">
+                <img src="/assets/img/blanche1.jpg"
+                     alt="Rest in Peace: John Blanche"
+                     loading="lazy">
+
+                <div class="overlay">
+                    <h3>Rest in Peace: John Blanche</h3>
+                </div>
+            </a>
+        </div>
+        
     
         
         <div class="gallery-item"
@@ -249,14 +305,14 @@ document.addEventListener("DOMContentLoaded", () => {
     
         
         <div class="gallery-item"
-             data-tags="test, featured">
-            <a href="/2026/01/01/test-post-14.html">
-                <img src="/assets/img/blanche1.jpg"
-                     alt="Test Post 14"
+             data-tags="skaven, aos, grimdark, mordheim">
+            <a href="/2026/01/01/verminous-rat-things.html">
+                <img src="/assets/img/blanche4.png"
+                     alt="Verminous Rat Things"
                      loading="lazy">
 
                 <div class="overlay">
-                    <h3>Test Post 14</h3>
+                    <h3>Verminous Rat Things</h3>
                 </div>
             </a>
         </div>
@@ -427,59 +483,11 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         
     
-        
-        <div class="gallery-item"
-             data-tags="test, featured">
-            <a href="/2026/01/01/test-post-1.html">
-                <img src="/assets/img/blanche4.png"
-                     alt="Test Post 2"
-                     loading="lazy">
-
-                <div class="overlay">
-                    <h3>Test Post 2</h3>
-                </div>
-            </a>
-        </div>
-        
-    
 </div>
 
 <div class="blank-block"></div>
 <div class="blank-block"></div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-    const filters = document.querySelectorAll(".tag-filter");
-    const posts = document.querySelectorAll(".gallery-item");
-
-    filters.forEach(filter => {
-        
-        filter.addEventListener("click", function (e) {
-
-            e.preventDefault();
-
-            const tag = this.dataset.tag;
-
-            posts.forEach(post => {
-
-                const tags = post.dataset.tags
-                    .split(",")
-                    .map(t => t.trim());
-
-                if (tag === "all" || tags.includes(tag)) {
-                    post.style.display = "";
-                } else {
-                    post.style.display = "none";
-                }
-
-            });
-
-        });
-
-    });
-
-});
-</script>
   </div>
   
 <div class="container" style="text-align: center;">
@@ -498,32 +506,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <section class="parallax"></section>
 
-<script>
-  // Initialize AOS after DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-      offset: 0,
-      duration: 600,
-      easing: 'ease-out-cubic',
-      once: true,
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    });
-    
-    // Force refresh multiple times to ensure detection
-    setTimeout(function() { AOS.refresh(); }, 100);
-    setTimeout(function() { AOS.refresh(); }, 500);
-  });
-  
-  // Also refresh on scroll
-  let scrollTimeout;
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(function() {
-      AOS.refresh();
-    }, 50);
-  });
-</script>
+
 
 </body>
 </html>

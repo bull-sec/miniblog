@@ -4,6 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <script src="/assets/js/site.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Posts tagged with "featured"</title>
@@ -89,36 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <div class="container">
   <h1>Posts tagged with "featured"</h1>
 
-    
-<article class="blog-card"
-               data-tags="test, featured">
-
-        <div class="blog-card-image">
-
-          
-          <a href="/2026/01/01/test-post-14.html"><img
-            src="/assets/img/blanche1.jpg"
-            alt="Test Post 14"></a>
-          
-        </div>
-
-
-        <div class="blog-card-content">
-          <h3>
-            <a href="/2026/01/01/test-post-14.html">
-              Test Post 14
-            </a>
-          </h3>
-
-
-          <p>
-            This is test post 1.v
-
-          </p>
-
-
-        </div>
-      </article>
     
 <article class="blog-card"
                data-tags="test, featured">
@@ -240,36 +211,6 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </article>
     
-<article class="blog-card"
-               data-tags="test, featured">
-
-        <div class="blog-card-image">
-
-          
-          <a href="/2026/01/01/test-post-1.html"><img
-            src="/assets/img/blanche4.png"
-            alt="Test Post 2"></a>
-          
-        </div>
-
-
-        <div class="blog-card-content">
-          <h3>
-            <a href="/2026/01/01/test-post-1.html">
-              Test Post 2
-            </a>
-          </h3>
-
-
-          <p>
-            This is test post 1.
-
-          </p>
-
-
-        </div>
-      </article>
-    
 
 </div>
 
@@ -292,32 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <section class="parallax"></section>
 
-<script>
-  // Initialize AOS after DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-      offset: 0,
-      duration: 600,
-      easing: 'ease-out-cubic',
-      once: true,
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    });
-    
-    // Force refresh multiple times to ensure detection
-    setTimeout(function() { AOS.refresh(); }, 100);
-    setTimeout(function() { AOS.refresh(); }, 500);
-  });
-  
-  // Also refresh on scroll
-  let scrollTimeout;
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(function() {
-      AOS.refresh();
-    }, 50);
-  });
-</script>
+
 
 </body>
 </html>

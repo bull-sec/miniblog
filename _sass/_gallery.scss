@@ -38,7 +38,8 @@
     box-shadow: 0 8px 20px rgba(0,0,0,.3);
 }
 
-.gallery-item:hover img {
+.gallery-item:hover img,
+.gallery-item.active img {
     filter: grayscale(0%);
     transform: scale(1.05);
 }

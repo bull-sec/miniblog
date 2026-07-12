@@ -333,7 +333,8 @@ html, body {
   transform: scale(1.05) translateY(-5px);
 }
 
-.blog-card:hover .blog-card-image img {
+.blog-card:hover .blog-card-image img,
+.blog-card.active .blog-card-image img {
   class: img-animate;
   filter: grayscale(0%);
   transform: scale(1.03);
@@ -995,7 +996,8 @@ html, body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.gallery-item:hover img {
+.gallery-item:hover img,
+.gallery-item.active img {
   filter: grayscale(0%);
   transform: scale(1.05);
 }

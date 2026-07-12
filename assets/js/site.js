@@ -1,0 +1,203 @@
+
+  // Initialize AOS after DOM is ready
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      offset: 0,
+      duration: 600,
+      easing: 'ease-out-cubic',
+      once: true,
+      mirror: true,
+      anchorPlacement: 'top-bottom'
+    });
+    
+    // Force refresh multiple times to ensure detection
+    setTimeout(function() { AOS.refresh(); }, 100);
+    setTimeout(function() { AOS.refresh(); }, 500);
+  });
+  
+  // Also refresh on scroll
+  let scrollTimeout;
+  window.addEventListener('scroll', function() {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(function() {
+      AOS.refresh();
+    }, 50);
+  });
+
+
+// Function to enable center highlight for elements
+function enableCentreHighlight(selector) {
+
+    if (window.matchMedia("(hover: hover)").matches) {
+        return;
+    }
+
+    const items = [...document.querySelectorAll(selector)];
+
+    if (!items.length) return;
+
+    function update() {
+
+        const centre = window.innerHeight / 2;
+
+        let closest = null;
+        let distance = Infinity;
+
+        items.forEach(item => {
+
+            const rect = item.getBoundingClientRect();
+
+            const itemCentre = rect.top + rect.height / 2;
+
+            const d = Math.abs(itemCentre - centre);
+
+            if (d < distance) {
+                distance = d;
+                closest = item;
+            }
+
+        });
+
+        items.forEach(item => item.classList.remove("active"));
+
+        if (closest) {
+            closest.classList.add("active");
+        }
+
+    }
+
+    update();
+
+    window.addEventListener("scroll", update, { passive: true });
+
+    window.addEventListener("resize", update);
+
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const filters = document.querySelectorAll(".tag-filter");
+    const posts = document.querySelectorAll(".gallery-item");
+
+    filters.forEach(filter => {
+        
+        filter.addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            const tag = this.dataset.tag;
+
+            posts.forEach(post => {
+
+                const tags = post.dataset.tags
+                    .split(",")
+                    .map(t => t.trim());
+
+                if (tag === "all" || tags.includes(tag)) {
+                    post.style.display = "";
+                } else {
+                    post.style.display = "none";
+                }
+
+            });
+
+        });
+
+    });
+
+});
+
+
+// Gallery modal functionality
+document.addEventListener("DOMContentLoaded", () => {
+
+    const images = [...document.querySelectorAll(".gallery-image")];
+
+    if (!images.length) return;
+
+    const modal = document.getElementById("gallery-modal");
+    const modalImage = document.getElementById("gallery-modal-image");
+
+    const prev = document.querySelector(".gallery-prev");
+    const next = document.querySelector(".gallery-next");
+    const close = document.querySelector(".gallery-close");
+
+    let current = 0;
+
+    function show(index) {
+
+        current = (index + images.length) % images.length;
+
+        modalImage.src = images[current].src;
+
+    }
+
+    images.forEach((img, index) => {
+
+        img.addEventListener("click", () => {
+
+            show(index);
+
+            modal.classList.add("open");
+
+        });
+
+    });
+
+    next.addEventListener("click", e => {
+
+        e.stopPropagation();
+
+        show(current + 1);
+
+    });
+
+    prev.addEventListener("click", e => {
+
+        e.stopPropagation();
+
+        show(current - 1);
+
+    });
+
+    close.addEventListener("click", () => {
+
+        modal.classList.remove("open");
+
+    });
+
+    modal.addEventListener("click", e => {
+
+        if (e.target === modal) {
+            modal.classList.remove("open");
+        }
+
+    });
+
+    document.addEventListener("keydown", e => {
+
+        if (!modal.classList.contains("open")) return;
+
+        switch (e.key) {
+
+            case "ArrowRight":
+                show(current + 1);
+                break;
+
+            case "ArrowLeft":
+                show(current - 1);
+                break;
+
+            case "Escape":
+                modal.classList.remove("open");
+                break;
+
+        }
+
+    });
+
+});
+
+enableCentreHighlight(".gallery-item");
+enableCentreHighlight(".blog-card");

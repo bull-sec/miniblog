@@ -4,6 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <script src="/assets/js/site.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Posts tagged with "hobby"</title>
@@ -142,32 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <section class="parallax"></section>
 
-<script>
-  // Initialize AOS after DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-      offset: 0,
-      duration: 600,
-      easing: 'ease-out-cubic',
-      once: true,
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    });
-    
-    // Force refresh multiple times to ensure detection
-    setTimeout(function() { AOS.refresh(); }, 100);
-    setTimeout(function() { AOS.refresh(); }, 500);
-  });
-  
-  // Also refresh on scroll
-  let scrollTimeout;
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(function() {
-      AOS.refresh();
-    }, 50);
-  });
-</script>
+
 
 </body>
 </html>

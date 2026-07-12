@@ -4,6 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <script src="/assets/js/site.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Posts tagged with "warhammer"</title>
@@ -91,6 +92,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
 <article class="blog-card"
+               data-tags="grimdark, blanchitsu, warhammer">
+
+        <div class="blog-card-image">
+
+          
+          <a href="/2026/07/08/rip-john-blanche.html"><img
+            src="/assets/img/blanche1.jpg"
+            alt="Rest in Peace: John Blanche"></a>
+          
+        </div>
+
+
+        <div class="blog-card-content">
+          <h3>
+            <a href="/2026/07/08/rip-john-blanche.html">
+              Rest in Peace: John Blanche
+            </a>
+          </h3>
+
+
+          <p>
+            
+  The Bell of Lost Souls will now ring 40,000 times.
+
+
+          </p>
+
+
+        </div>
+      </article>
+    
+<article class="blog-card"
                data-tags="hobby, warhammer, modelling, nurgle, deathguard, 40k">
 
         <div class="blog-card-image">
@@ -142,32 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <section class="parallax"></section>
 
-<script>
-  // Initialize AOS after DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-      offset: 0,
-      duration: 600,
-      easing: 'ease-out-cubic',
-      once: true,
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    });
-    
-    // Force refresh multiple times to ensure detection
-    setTimeout(function() { AOS.refresh(); }, 100);
-    setTimeout(function() { AOS.refresh(); }, 500);
-  });
-  
-  // Also refresh on scroll
-  let scrollTimeout;
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(function() {
-      AOS.refresh();
-    }, 50);
-  });
-</script>
+
 
 </body>
 </html>

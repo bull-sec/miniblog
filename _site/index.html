@@ -4,6 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <script src="/assets/js/site.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>- bl3ak Miniatures -</title>
@@ -105,25 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
   <div class="swiper-wrapper">
     
       <div class="swiper-slide">
-        <a href="/2026/01/01/test-post-14.html" class="featured-post">
-
-          <img
-            class="featured-post"
-            src="/assets/img/blanche1.jpg"
-            alt="Test Post 14"
-            loading="lazy"
-          >
-
-          <div class="overlay">
-            <h3>Test Post 14</h3>
-          </div>
-          
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-        </a>
-      </div>
-    
-      <div class="swiper-slide">
         <a href="/2026/01/01/test-post-12.html" class="featured-post">
 
           <img
@@ -192,25 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <div class="overlay">
             <h3>Test Post 1</h3>
-          </div>
-          
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-        </a>
-      </div>
-    
-      <div class="swiper-slide">
-        <a href="/2026/01/01/test-post-1.html" class="featured-post">
-
-          <img
-            class="featured-post"
-            src="/assets/img/blanche4.png"
-            alt="Test Post 2"
-            loading="lazy"
-          >
-
-          <div class="overlay">
-            <h3>Test Post 2</h3>
           </div>
           
       <div class="swiper-button-prev"></div>
@@ -323,14 +286,14 @@ document.addEventListener("DOMContentLoaded", function () {
 <br>
 
 <div class="jumbotron">
-  <a href="/2026/03/01/ferrifractor-cartel.html">
-    <img src="/assets/img/warhammer-40k-death-guard-collection-banner.png" alt="The Ferrifractor Cartel">
+  <a href="/2026/07/08/rip-john-blanche.html">
+    <img src="/assets/img/blanche1.jpg" alt="Rest in Peace: John Blanche">
     <div class="jumbotron-overlay">
       <div class="jumbotron-content">
-        <h1>The Ferrifractor Cartel</h1>
+        <h1>Rest in Peace: John Blanche</h1>
         <p>
           
-
+  The Bell of Lost Souls will now ri...
         </p>
       </div>
     </div>
@@ -344,6 +307,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
+  <a href="/2026/07/08/rip-john-blanche.html">
+    <img src="/assets/img/blanche1.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+    <div class="cover-block__inner-container">
+      <div class="layout-flow">
+        <h2 href="/2026/07/08/rip-john-blanche.html">Rest in Peace: John Blanche</h2>
+      </div>
+    </div>
+    </a>
+  </div>
+
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
   <a href="/2026/03/01/ferrifractor-cartel.html">
     <img src="/assets/img/warhammer-40k-death-guard-collection-banner.png" alt="Cover Image" class="cover-image" class="greyscale-hover">
     <div class="cover-block__inner-container">
@@ -355,11 +329,11 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 
 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
-  <a href="/2026/01/01/test-post-14.html">
-    <img src="/assets/img/blanche1.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
+  <a href="/2026/01/01/verminous-rat-things.html">
+    <img src="/assets/img/blanche4.png" alt="Cover Image" class="cover-image" class="greyscale-hover">
     <div class="cover-block__inner-container">
       <div class="layout-flow">
-        <h2 href="/2026/01/01/test-post-14.html">Test Post 14</h2>
+        <h2 href="/2026/01/01/verminous-rat-things.html">Verminous Rat Things</h2>
       </div>
     </div>
     </a>
@@ -420,17 +394,6 @@ document.addEventListener("DOMContentLoaded", function () {
     </a>
   </div>
 
-<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" class="cover-block">
-  <a href="/2026/01/01/test-post-8.html">
-    <img src="/assets/img/blanche1.jpg" alt="Cover Image" class="cover-image" class="greyscale-hover">
-    <div class="cover-block__inner-container">
-      <div class="layout-flow">
-        <h2 href="/2026/01/01/test-post-8.html">Test Post 3</h2>
-      </div>
-    </div>
-    </a>
-  </div>
-
 
 
 
@@ -455,32 +418,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <section class="parallax"></section>
 
-<script>
-  // Initialize AOS after DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    AOS.init({
-      offset: 0,
-      duration: 600,
-      easing: 'ease-out-cubic',
-      once: true,
-      mirror: true,
-      anchorPlacement: 'top-bottom'
-    });
-    
-    // Force refresh multiple times to ensure detection
-    setTimeout(function() { AOS.refresh(); }, 100);
-    setTimeout(function() { AOS.refresh(); }, 500);
-  });
-  
-  // Also refresh on scroll
-  let scrollTimeout;
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(function() {
-      AOS.refresh();
-    }, 50);
-  });
-</script>
+
 
 </body>
 </html>
