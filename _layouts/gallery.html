@@ -32,14 +32,20 @@ title:  '- bl3ak Miniatures -'
 <div class="blank-block"></div>
 <div class="gallery-container">
     {% for post in site.posts %}
-        <div class="gallery-item" data-tags="{{ post.tags | join: ', ' | downcase }}">
+        {% if post.image %}
+        <div class="gallery-item"
+             data-tags="{{ post.tags | join: ', ' | downcase }}">
             <a href="{{ post.url }}">
-                <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+                <img src="{{ post.image }}"
+                     alt="{{ post.title }}"
+                     loading="lazy">
+
                 <div class="overlay">
                     <h3>{{ post.title }}</h3>
                 </div>
             </a>
-        </div>  
+        </div>
+        {% endif %}
     {% endfor %}
 </div>
 

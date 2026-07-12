@@ -119,6 +119,14 @@ document.addEventListener("DOMContentLoaded", () => {
   </main>
 </article>
 
+
+
+<div id="image-modal" class="image-modal">
+    <span class="close">&times;</span>
+
+    <img id="modal-image" src="" alt="">
+</div>
+
 <style>
   /* Global Styles */
   body {
@@ -183,6 +191,97 @@ document.addEventListener("DOMContentLoaded", () => {
 <p class="blank-block"></p>
 <h1 style="text-align: center; margin-bottom: 5px;">=][=</h1>
 <p class="blank-block"></p>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const images = [...document.querySelectorAll(".gallery-image")];
+
+    if (!images.length) return;
+
+    const modal = document.getElementById("gallery-modal");
+    const modalImage = document.getElementById("gallery-modal-image");
+
+    const prev = document.querySelector(".gallery-prev");
+    const next = document.querySelector(".gallery-next");
+    const close = document.querySelector(".gallery-close");
+
+    let current = 0;
+
+    function show(index) {
+
+        current = (index + images.length) % images.length;
+
+        modalImage.src = images[current].src;
+
+    }
+
+    images.forEach((img, index) => {
+
+        img.addEventListener("click", () => {
+
+            show(index);
+
+            modal.classList.add("open");
+
+        });
+
+    });
+
+    next.addEventListener("click", e => {
+
+        e.stopPropagation();
+
+        show(current + 1);
+
+    });
+
+    prev.addEventListener("click", e => {
+
+        e.stopPropagation();
+
+        show(current - 1);
+
+    });
+
+    close.addEventListener("click", () => {
+
+        modal.classList.remove("open");
+
+    });
+
+    modal.addEventListener("click", e => {
+
+        if (e.target === modal) {
+            modal.classList.remove("open");
+        }
+
+    });
+
+    document.addEventListener("keydown", e => {
+
+        if (!modal.classList.contains("open")) return;
+
+        switch (e.key) {
+
+            case "ArrowRight":
+                show(current + 1);
+                break;
+
+            case "ArrowLeft":
+                show(current - 1);
+                break;
+
+            case "Escape":
+                modal.classList.remove("open");
+                break;
+
+        }
+
+    });
+
+});
+</script>
   </div>
   
 <div class="container" style="text-align: center;">

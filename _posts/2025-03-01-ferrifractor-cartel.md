@@ -10,7 +10,8 @@ tags:
   - deathguard
   - 40k
 image: /assets/img/warhammer-40k-death-guard-collection-banner.png
-description: Designing a Custom Death Guard Warband for Warhammer 40,000
+gallery: /assets/images/gallery/death-guard
+description: Showcasing a Custom Death Guard Warband for Warhammer 40,000
 og-image:
 ---
 

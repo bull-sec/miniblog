@@ -1,0 +1,34 @@
+.image-modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.9);
+
+    z-index: 1000;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal.open {
+    display: flex;
+}
+
+.image-modal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    font-size: 3rem;
+    color: white;
+
+    cursor: pointer;
+}

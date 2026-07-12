@@ -15,8 +15,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="The Ferrifractor Cartel" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Designing a Custom Death Guard Warband for Warhammer 40,000" />
-<meta property="og:description" content="Designing a Custom Death Guard Warband for Warhammer 40,000" />
+<meta name="description" content="Showcasing a Custom Death Guard Warband for Warhammer 40,000" />
+<meta property="og:description" content="Showcasing a Custom Death Guard Warband for Warhammer 40,000" />
 <link rel="canonical" href="http://localhost:4000/2026/03/01/ferrifractor-cartel.html" />
 <meta property="og:url" content="http://localhost:4000/2026/03/01/ferrifractor-cartel.html" />
 <meta property="og:site_name" content="=][=" />
@@ -28,7 +28,7 @@
 <meta property="twitter:title" content="The Ferrifractor Cartel" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-03-01T00:00:00+00:00","datePublished":"2026-03-01T00:00:00+00:00","description":"Designing a Custom Death Guard Warband for Warhammer 40,000","headline":"The Ferrifractor Cartel","image":"http://localhost:4000/assets/img/warhammer-40k-death-guard-collection-banner.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2026/03/01/ferrifractor-cartel.html"},"url":"http://localhost:4000/2026/03/01/ferrifractor-cartel.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-03-01T00:00:00+00:00","datePublished":"2026-03-01T00:00:00+00:00","description":"Showcasing a Custom Death Guard Warband for Warhammer 40,000","headline":"The Ferrifractor Cartel","image":"http://localhost:4000/assets/img/warhammer-40k-death-guard-collection-banner.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2026/03/01/ferrifractor-cartel.html"},"url":"http://localhost:4000/2026/03/01/ferrifractor-cartel.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="shortcut icon" type="image/favicon" href="/assets/favicon/favicon.ico">
@@ -112,6 +112,97 @@ document.addEventListener("DOMContentLoaded", () => {
   </main>
 </article>
 
+
+<div class="gallery-container">
+
+  
+
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg1.png"
+        alt="The Ferrifractor Cartel image 1"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg2.png"
+        alt="The Ferrifractor Cartel image 2"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg3.png"
+        alt="The Ferrifractor Cartel image 3"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg4.png"
+        alt="The Ferrifractor Cartel image 4"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg5.png"
+        alt="The Ferrifractor Cartel image 5"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg6.png"
+        alt="The Ferrifractor Cartel image 6"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg7.png"
+        alt="The Ferrifractor Cartel image 7"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+    <div class="gallery-item">
+      <img
+        src="/assets/images/gallery/death-guard/dg8.png"
+        alt="The Ferrifractor Cartel image 8"
+        loading="lazy"
+        class="gallery-image">
+    </div>
+  
+
+</div>
+
+<div id="gallery-modal" class="gallery-modal">
+    <button class="gallery-close">&times;</button>
+
+    <button class="gallery-prev">&#10094;</button>
+
+    <img id="gallery-modal-image">
+
+    <button class="gallery-next">&#10095;</button>
+</div>
+
+
+
+<div id="image-modal" class="image-modal">
+    <span class="close">&times;</span>
+
+    <img id="modal-image" src="" alt="">
+</div>
+
 <style>
   /* Global Styles */
   body {
@@ -176,6 +267,97 @@ document.addEventListener("DOMContentLoaded", () => {
 <p class="blank-block"></p>
 <h1 style="text-align: center; margin-bottom: 5px;">=][=</h1>
 <p class="blank-block"></p>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const images = [...document.querySelectorAll(".gallery-image")];
+
+    if (!images.length) return;
+
+    const modal = document.getElementById("gallery-modal");
+    const modalImage = document.getElementById("gallery-modal-image");
+
+    const prev = document.querySelector(".gallery-prev");
+    const next = document.querySelector(".gallery-next");
+    const close = document.querySelector(".gallery-close");
+
+    let current = 0;
+
+    function show(index) {
+
+        current = (index + images.length) % images.length;
+
+        modalImage.src = images[current].src;
+
+    }
+
+    images.forEach((img, index) => {
+
+        img.addEventListener("click", () => {
+
+            show(index);
+
+            modal.classList.add("open");
+
+        });
+
+    });
+
+    next.addEventListener("click", e => {
+
+        e.stopPropagation();
+
+        show(current + 1);
+
+    });
+
+    prev.addEventListener("click", e => {
+
+        e.stopPropagation();
+
+        show(current - 1);
+
+    });
+
+    close.addEventListener("click", () => {
+
+        modal.classList.remove("open");
+
+    });
+
+    modal.addEventListener("click", e => {
+
+        if (e.target === modal) {
+            modal.classList.remove("open");
+        }
+
+    });
+
+    document.addEventListener("keydown", e => {
+
+        if (!modal.classList.contains("open")) return;
+
+        switch (e.key) {
+
+            case "ArrowRight":
+                show(current + 1);
+                break;
+
+            case "ArrowLeft":
+                show(current - 1);
+                break;
+
+            case "Escape":
+                modal.classList.remove("open");
+                break;
+
+        }
+
+    });
+
+});
+</script>
   </div>
   
 <div class="container" style="text-align: center;">
