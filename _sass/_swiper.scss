@@ -21,3 +21,32 @@
 .swiper-button-prev {
   color: #9a022e !important;
 }
+
+.featured-swiper {
+    width: 100%;
+}
+
+.featured-swiper .swiper-slide {
+    height: 300px;
+}
+
+.featured-swiper .cover-block {
+    height: 300px;
+}
+
+.featured-swiper {
+    padding-bottom: 2rem;
+}
+
+.featured-swiper .swiper-pagination {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.featured-swiper .swiper-pagination-bullet {
+    opacity: 0.6;
+}
+
+.featured-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
