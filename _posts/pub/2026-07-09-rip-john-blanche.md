@@ -3,7 +3,7 @@ layout: post
 title: "Rest in Peace: John Blanche"
 date: 2026-07-08
 tags: [grimdark, blanchitsu, warhammer, featured]
-image: /assets/img/blanche1.jpg
+image: /assets/img/blanche2.jpg
 description: A short tribute to painting legend John Blanche, who passed away this year.
 published: true
 ---
