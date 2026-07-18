@@ -1249,4 +1249,13 @@ html, body {
   transform: translateX(5px);
 }
 
+.story-nav a.completed {
+  opacity: 0.45;
+}
+
+.story-nav a.active {
+  opacity: 1;
+  color: #8a0909;
+}
+
 /*# sourceMappingURL=main.css.map */

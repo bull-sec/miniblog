@@ -98,3 +98,12 @@
     transform: translateX(5px);
 }
 
+.story-nav a.completed {
+    opacity: 0.45;
+}
+
+.story-nav a.active {
+    opacity: 1;
+    color: $primary-color;
+}
+

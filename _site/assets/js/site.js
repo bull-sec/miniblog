@@ -256,26 +256,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Highlight current section
-    const observer = new IntersectionObserver(entries => {
+    const links = Array.from(document.querySelectorAll(".story-nav a"));
 
+    const footer = document.querySelector("footer");
+
+    const footerObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                links.forEach(link => {
+                    link.classList.remove("active");
+                    link.classList.add("completed");
+                });
+            }
+        });
+    }, {
+        rootMargin: "0px 0px 0px 0px"
+    });
 
+    footerObserver.observe(footer);
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
             if (!entry.isIntersecting) return;
 
-            document
-                .querySelectorAll(".story-nav a")
-                .forEach(a => a.classList.remove("active"));
+            const activeIndex = links.findIndex(link =>
+                link.getAttribute("href") === "#" + entry.target.id
+            );
 
-            document
-                .querySelector(`.story-nav a[href="#${entry.target.id}"]`)
-                ?.classList.add("active");
-
+            links.forEach((link, index) => {
+                link.classList.toggle("completed", index < activeIndex);
+                link.classList.toggle("active", index === activeIndex);
+            });
         });
-
     }, {
-
         rootMargin: "-40% 0px -50% 0px"
-
     });
 
     headings.forEach(h => observer.observe(h));
@@ -294,4 +308,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
+});
+
+links.forEach((link, index) => {
+    if (index < activeIndex) {
+        link.classList.add("completed");
+    } else {
+        link.classList.remove("completed");
+    }
 });
