@@ -199,6 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+if (typeof Swiper !== 'undefined') {
 document.addEventListener("DOMContentLoaded", function () {
 
   new Swiper('.featured-swiper', {
@@ -229,6 +230,68 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+}
 
 enableCentreHighlight(".gallery-item");
 enableCentreHighlight(".blog-card");
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const sidebar = document.querySelector(".story-nav");
+
+    if (!sidebar) return;
+
+    const headings = document.querySelectorAll("article h3[id]");
+
+    // Build navigation
+    headings.forEach(h => {
+
+        const link = document.createElement("a");
+
+        link.href = "#" + h.id;
+        link.textContent = h.textContent;
+
+        sidebar.appendChild(link);
+
+    });
+
+    // Highlight current section
+    const observer = new IntersectionObserver(entries => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            document
+                .querySelectorAll(".story-nav a")
+                .forEach(a => a.classList.remove("active"));
+
+            document
+                .querySelector(`.story-nav a[href="#${entry.target.id}"]`)
+                ?.classList.add("active");
+
+        });
+
+    }, {
+
+        rootMargin: "-40% 0px -50% 0px"
+
+    });
+
+    headings.forEach(h => observer.observe(h));
+
+    // Progress bar
+    const progressFill = document.querySelector(".story-progress-fill");
+
+    window.addEventListener("scroll", () => {
+
+        const maxScroll =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+        const progress = (window.scrollY / maxScroll) * 100;
+
+        progressFill.style.width = progress + "%";
+
+    });
+
+});
