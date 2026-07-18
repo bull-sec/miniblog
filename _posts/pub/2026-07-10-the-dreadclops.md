@@ -355,9 +355,4 @@ published: true
 
 *To the person that finds this diary should I not return, may the Emperor Protect me.*
 
-*Finito*
-
----
-
-The Dreadclops was one of the first miniatures I built from scratch. Him and his little minion "Frankle" were super fun to build, the idea of using the Spindle Drone head had been floating around my brain, and when I picked up some *really* cheap Stormcast minis there was only one real option for what was going to happen next. Slap in some extra bits from various Necromunda kits and they came together really nicely.
-
+*Fin*
