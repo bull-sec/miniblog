@@ -355,4 +355,5 @@ published: true
 
 *To the person that finds this diary should I not return, may the Emperor Protect me.*
 
-*Fin*
+-*Fin*-
+
