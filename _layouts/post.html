@@ -119,6 +119,12 @@ pagination:
 <p class="blank-block"></p>
 
 <aside class="story-sidebar">
+{% assign words = content | number_of_words %}
+{% assign minutes = words | divided_by: 200 %}
+{% if minutes < 1 %}
+  {% assign minutes = 1 %}
+{% endif %}
+
 
     <h4>Contents</h4>
 
@@ -127,5 +133,8 @@ pagination:
     </div>
 
     <nav class="story-nav"></nav>
-
+    <span class="reading-time" style="margin-top: 10px;">
+    ⏱ {{ minutes }} min read
+    </span>
 </aside>
+
