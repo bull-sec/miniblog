@@ -2,7 +2,7 @@
 layout: post
 title: The Dreadclops
 date: 2026-07-12 T16:00
-tags: [fish]
+tags: [grimdark, 40k, shortstory, featured]
 image: /assets/img/dreadclops.png
 published: true
 ---
