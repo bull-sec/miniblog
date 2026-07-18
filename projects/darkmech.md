@@ -2,20 +2,16 @@
 layout: post
 title: Dark Mechanicum
 permalink: /projects/darkmech
-gallery: /assets/images/gallery/death-guard
+gallery: /assets/images/gallery/blanche
 date:   2025-01-01 12:06:00 +0000
 tags: [darkmechanicum, admech, 40k, inq28]
 ---
 
-
+![John Blanche's Tech Priest](/assets/img/blanche-tech-priest.png)
 
 > "Those fools and their talk of spirits and rites; technology is cause and consequence, mechanism and effect, and should not be so restrained and mishandled as those red-robed simpletons would believe."
 
     — Rephenesti Korvane, Heretek
-
-> "10,000 years of stagnation. That is the legacy left by those who rule from Mars. Progress is made by those who dare to cross their arbitrary rules."
-
-    - Ryazai, Fabricator General of Gamma-Zeta-61B73, Heretek
 
 ![Something, something, dark side, something](/assets/img/mechanicus.jpg)
 
@@ -30,6 +26,10 @@ Proin libero ante, lacinia a lacus vel, finibus aliquet tellus. Vivamus blandit 
 In scelerisque metus nec nunc sollicitudin maximus. Aliquam tempus ipsum vel lorem pharetra ultricies. Curabitur ac nisl scelerisque, rutrum velit ullamcorper, rutrum tortor. Curabitur luctus luctus velit nec ultrices. Integer nisl metus, ultrices imperdiet eros ut, convallis bibendum felis. Vestibulum lacinia feugiat lorem, vitae ultrices purus congue elementum. Sed blandit quam fringilla quam condimentum posuere. Phasellus nunc sem, pretium finibus pretium at, maximus non ligula. Cras sit amet neque dui.
 
 Sed faucibus faucibus faucibus. Morbi ut nulla et ante consectetur convallis. Sed nisl nunc, bibendum vel sagittis ut, porta et est. Nulla magna libero, congue ac leo lacinia, vestibulum ullamcorper elit. Etiam suscipit tellus id urna consectetur, efficitur hendrerit lacus molestie. Duis non tincidunt urna. Phasellus id est ut tellus imperdiet pretium. Nullam sit amet lacinia tellus, et sollicitudin arcu. Aliquam sagittis id felis quis rutrum. Donec ut elit quis turpis pretium consectetur. Nunc non tellus mattis, congue nibh ac, suscipit nibh. Mauris accumsan urna eget justo maximus, nec eleifend erat condimentum. Fusce feugiat fringilla justo. 
+
+> "10,000 years of stagnation. That is the legacy left by those who rule from Mars. Progress is made by those who dare to cross their arbitrary rules."
+
+    - Ryazai, Fabricator General of Gamma-Zeta-61B73, Heretek
 
 ### Forge World Hephansas
 

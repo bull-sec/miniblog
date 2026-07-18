@@ -12,7 +12,7 @@ title: '- bl3ak Miniatures -'
 <div class="blank-block"></div>
 
 <h2 style="text-align: center;">++ FEATURED ++</h2>
-
+<br style="margin-bottom: 20px;">
 <div class="swiper featured-swiper">
 
   <div class="swiper-wrapper">
@@ -68,44 +68,10 @@ title: '- bl3ak Miniatures -'
   <p style="text-align:center;">++ FORMATTING CONTENT ++</p>
 </div>
 
-
 <div class="blank-block"></div>
-
 
 <h2 style="text-align:center;">++ LATEST ++</h2>
-
-
-{% assign latest = site.posts.first %}
-
-<div class="cover-block latest-cover">
-
-  <a href="{{ latest.url }}" class="cover-link">
-
-    <img
-      src="{{ latest.image }}"
-      alt="{{ latest.title }}"
-      class="cover-image"
-    >
-
-    <div class="cover-block__inner-container">
-      <h1>{{ latest.title }}</h1>
-    </div>
-
-  </a>
-
-</div>
-
-
-<div class="blank-block"></div>
-
-
-<h1 style="text-align:center; margin-bottom:5px;">
-  {{ site.title }}
-</h1>
-
-
-<div class="blank-block"></div>
-
+<br>
 
 {% for post in site.posts limit:8 %}
 
