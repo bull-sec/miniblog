@@ -6,6 +6,7 @@ tags: [grimdark, blanchitsu, warhammer, featured]
 image: /assets/img/blanche2.jpg
 description: A short tribute to painting legend John Blanche, who passed away this year.
 published: true
+pinned: true
 ---
 
 >  The Bell of Lost Souls will now ring 40,000 times.
