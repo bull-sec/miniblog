@@ -310,6 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+if (typeof links !== 'undefined') {
 links.forEach((link, index) => {
     if (index < activeIndex) {
         link.classList.add("completed");
@@ -317,3 +318,4 @@ links.forEach((link, index) => {
         link.classList.remove("completed");
     }
 });
+}
