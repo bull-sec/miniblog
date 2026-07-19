@@ -4,7 +4,6 @@ title: "Rest in Peace: John Blanche"
 date: 2026-07-08
 tags: [grimdark, blanchitsu, warhammer, featured]
 image: /assets/img/blanche2.jpg
-gallery: /assets/images/gallery/blanche
 description: A short tribute to painting legend John Blanche, who passed away this year.
 published: true
 pinned: true
@@ -38,6 +37,6 @@ John Blanche's work has had a major influence on the Warhammer hobby as a whole,
 
 Most of this would not have happened without the inspiration from John, and in turn what he inspired in others. He may not have had a specific direct influence on me that I could pin down aside from the general "I like the grimdark vibe", but I can almost certainly pin down inspiration from others, who I know in turn have been influenced by John's work. Hopefully I can carry on that little cycle with my own little contributions to the hobby.
 
-> The Bell of Lost Souls shall now toll One Thousand Times
+![Rest in Peace](/assets/img/jb.png)
 
-### Gallery
+> The Bell of Lost Souls rings out one more time.

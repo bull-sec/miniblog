@@ -46,6 +46,7 @@
         <span class="hamburger"></span>
       </button>
       <ul class="nav-menu">
+        <li><a href="/about/">About</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/gallery/">Gallery</a></li>
         <li class="dropdown">
@@ -89,16 +90,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <div class="container">
     <br>
+
 <article>
-  <header>
-      <h1 style="text-align: center;">The Dreadclops</h1>
-      <p style="text-align: center;" class="post-meta"><i>++ First transmitted: July 12, 2026, 16:00 ++</i></p>
 
-  </header>
+<header>
+    <h1 style="text-align: center;">The Dreadclops</h1>
 
-  <main>
-    <hr>
-      <p><img src="/assets/img/dreadclops.png" alt="The Dreadclops" /></p>
+    <p style="text-align: center;" class="post-meta">
+        <i>
+        ++ First transmitted: July 12, 2026, 16:00 ++
+        </i>
+    </p>
+</header>
+
+
+<main>
+
+<hr>
+
+
+
+    <p><img src="/assets/img/dreadclops.png" alt="The Dreadclops" /></p>
 
 <blockquote>
   <p><em>“It walks like a man, until it doesn’t m’lord. All of a sudden it moves like the devil itself, so fast it were m’lord, if I hadn’t seen what it done to poor Harry I wouldn’t ave believed it. No m’lord, I don’t suppose it did see me watch, or if it did it didn’t seem to care none. If I may m’lord, I don’t claim to be an expert about such matters, I leave that to gentlemen like yerself m’lord, but I will venture that when you rip it’s helmet off, you’re not going to be looking at anything human.</em></p>
@@ -141,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <p><em>The cells occupant was brusquely informed to stand in the corner of their cell by one of the burly Stormtroopers while they restrained them from behind. They complied with the Stormtroopers without protest, and I thought I saw the shape of an enormous man moving in the shadows of the dark cell. Phelps’ adjutant had vanished, and I looked around for someone of authority, I wasn’t prepared to carry out an interrogation and the thought of being left alone in this unmarked cell with whatever was inside it didn’t fill me with optimism. To my relief I spotted the familiar face of one of the Junior Interrogators, Maxilla, sauntering towards me with an air of confidence and authority. We exchanged greetings, and I was informed that I was to attend the interrogation but was to remain silent and observe. Instructions I was glad to receive.</em></p>
 
-<h3 id="the-interrogation-part-ii">The Interrogation: Part II</h3>
+<h3 id="the-interrogation-ii">The Interrogation: II</h3>
 
 <p><em>The Stormtroopers had restrained the occupant of the cell, they were shackled and manacled to a large metal beam, their movement restricted to being able to move their head and speak. We entered the cell, and I was immediately drawn to the sheer size of the occupant. If Maxilla had told me that we were interrogating an Ogryn in that cell, I’d have believed him, the man was enormous. His arms were like tree trunks that had been attached to a building, each one looked like it could snap me in half. He was quiet though, belying his size, he brooded in his shackles and stared down at the floor, not deigning to acknowledge the two new occupants of the cell.</em></p>
 
@@ -269,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <p><em>”Can you tell me about what happened to Ms. Wallace, Tobias?</em>”</p>
 
-<h3 id="the-interrogation-part-iii">The Interrogation: Part III</h3>
+<h3 id="the-interrogation-iii">The Interrogation: III</h3>
 
 <p><em>There was no answer from Peppana, but after a few moments I made out a sound that I never thought I’d hear from someone so intimidating. The giant was whimpering quietly. I made out tears in his eyes and there was a noticeable quiver to his lips. We sat in silence for a little while, the only sound in the cell were the small noises coming from the giant.</em></p>
 
@@ -450,104 +462,291 @@ document.addEventListener("DOMContentLoaded", () => {
 <p>-<em>Fin</em>-</p>
 
 
-  </main>
+
+
+
+</main>
+
 </article>
 
 
 
+
+
+
+
 <div id="image-modal" class="image-modal">
+
     <span class="close">&times;</span>
 
     <img id="modal-image" src="" alt="">
+
 </div>
 
+
+
 <style>
-  /* Global Styles */
-  body {
-      /* font-family: Georgia, "Times New Roman", Times, serif; */
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-  }
 
-  h1, h2, h3 {
-      /* font-family: Arial, Helvetica, sans-serif; */
-      margin: 1.5em 0 0.5em;
-  }
+body {
+    font-size:16px;
+    line-height:1.6;
+    margin:0;
+    padding:0;
+}
 
-  h1 {
-      font-size: 2.5em;
-  }
+h1,h2,h3 {
+    margin:1.5em 0 .5em;
+}
 
-  h2 {
-      font-size: 2em;
-  }
+img {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:1em auto;
+}
 
-  h3 {
-      font-size: 1.5em;
-  }
 
-  p {
-      margin: 1em 0;
-  }
+@media screen and (min-width:768px) {
 
-  img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 1em auto;
-  }
+article {
+    max-width:80%;
+    margin:0 auto;
+}
 
-  blockquote {
-      font-style: italic;
-      margin: 1.5em;
-      padding: 1em;
-      border-left: 4px solid;
-  }
+}
 
-  a {
-      text-decoration: none;
-  }
-
-  a:hover {
-      text-decoration: underline;
-  }
-
-  /* Layout Adjustment for Browsers */
-  @media screen and (min-width: 768px) {
-      article {
-          max-width:80%;
-          margin: 0 auto;
-      }
-  }
 </style>
+
+
+
 <p class="blank-block"></p>
-<h1 style="text-align: center; margin-bottom: 5px;">=][=</h1>
+
+<h1 style="text-align:center;margin-bottom:5px;">
+=][=
+</h1>
+
 <p class="blank-block"></p>
+
+
 
 <aside class="story-sidebar">
-    
-    
-    
+
+
+
+
+
+
+
+<h4>Content</h4>
+
+
+<div class="story-progress">
+    <div class="story-progress-fill"></div>
+</div>
+
+
+<nav class="story-nav"></nav>
+
 
 <br>
 
-    <h4 style="margin-bottom: 10px;">Content</h4>
 
-    <div class="story-progress">
-        <div class="story-progress-fill"></div>
-    </div>
+<span class="reading-time">
+⏱ 37 min read
+</span>
 
-    <nav class="story-nav"></nav>
-    <br>
-    <span class="reading-time" style="margin-top: 10px;">
-    ⏱ 37 min read
-    </span>
+
 </aside>
 
+
+
+<aside class="suggestion-sidebar">
+
+<h4>Explore</h4>
+
+
+<nav class="suggestion-nav">
+
+
+
+
+
+
+<a href="/2026/07/18/ferrifractor-cartel.html" class="suggestion-item">
+
+<span class="suggestion-title">
+The Ferrifractor Cartel
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 13 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a href="/2026/07/11/too-many-eyes.html" class="suggestion-item">
+
+<span class="suggestion-title">
+Too Many Eyes
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 1 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/07/08/rip-john-blanche.html" class="suggestion-item">
+
+<span class="suggestion-title">
+Rest in Peace: John Blanche
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 2 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/06/28/flashes.html" class="suggestion-item">
+
+<span class="suggestion-title">
+Flashes
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 1 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/06/28/no-longer.html" class="suggestion-item">
+
+<span class="suggestion-title">
+No Longer
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 1 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/01/01/test-site-13.html" class="suggestion-item">
+
+<span class="suggestion-title">
+Test Site 13
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 1 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+</nav>
+
+</aside>
+
+
+
 <script>
-const links = document.querySelectorAll(".story-nav a");
+
+const links = document.querySelectorAll('.story-sidebar .story-nav a');
+
 </script>
   </div>
   

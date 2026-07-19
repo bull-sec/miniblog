@@ -1,0 +1,88 @@
+.suggestion-sidebar {
+
+    position: fixed;
+
+    top: 140px;
+
+    left: 2rem;
+
+    width: 220px;
+
+    z-index: 100;
+
+
+    h4 {
+
+        margin-bottom: 1rem;
+
+    }
+
+}
+
+
+.suggestion-nav {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.suggestion-item {
+
+    display: block;
+
+    color: rgba(255,255,255,.55);
+
+    text-decoration: none;
+
+    margin-bottom: .9rem;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+
+    &:hover {
+
+        color: $primary-color;
+
+        transform: translateX(5px);
+
+    }
+
+}
+
+
+.suggestion-title {
+
+    display: block;
+
+    line-height: 1.35;
+
+}
+
+
+.suggestion-time {
+
+    display: block;
+
+    margin-top: .25rem;
+
+    font-size: .75rem;
+
+    opacity: .5;
+
+}
+
+
+@media (max-width: 1400px) {
+
+    .suggestion-sidebar {
+
+        display: none;
+
+    }
+
+}

@@ -46,6 +46,7 @@
         <span class="hamburger"></span>
       </button>
       <ul class="nav-menu">
+        <li><a href="/about/">About</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/gallery/">Gallery</a></li>
         <li class="dropdown">
@@ -89,18 +90,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   <div class="container">
     <br>
+
 <article>
-  <header>
-      <h1 style="text-align: center;">Flashes</h1>
-      <p style="text-align: center;" class="post-meta"><i>++ First transmitted: June 28, 2026, 00:00 ++</i></p>
 
-  </header>
+<header>
+    <h1 style="text-align: center;">Flashes</h1>
 
-  <main>
-    <hr>
-      <p><img src="/assets/img/no-longer.png" alt="No Longer" /></p>
+    <p style="text-align: center;" class="post-meta">
+        <i>
+        ++ First transmitted: June 28, 2026, 00:00 ++
+        </i>
+    </p>
+</header>
+
+
+<main>
+
+<hr>
+
+
+
+    <p><img src="/assets/img/no-longer.png" alt="No Longer" /></p>
 
 <hr />
+
+<p><br /></p>
 
 <p style="text-align:center">Flashes of light blind my eyes from up ahead</p>
 
@@ -120,106 +134,292 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <p style="text-align:center">I wonder if the next person will know me, beneath their step</p>
 
-<hr />
 
-  </main>
+
+
+
+</main>
+
 </article>
 
 
 
+
+
+
+
 <div id="image-modal" class="image-modal">
+
     <span class="close">&times;</span>
 
     <img id="modal-image" src="" alt="">
+
 </div>
 
+
+
 <style>
-  /* Global Styles */
-  body {
-      /* font-family: Georgia, "Times New Roman", Times, serif; */
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-  }
 
-  h1, h2, h3 {
-      /* font-family: Arial, Helvetica, sans-serif; */
-      margin: 1.5em 0 0.5em;
-  }
+body {
+    font-size:16px;
+    line-height:1.6;
+    margin:0;
+    padding:0;
+}
 
-  h1 {
-      font-size: 2.5em;
-  }
+h1,h2,h3 {
+    margin:1.5em 0 .5em;
+}
 
-  h2 {
-      font-size: 2em;
-  }
+img {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:1em auto;
+}
 
-  h3 {
-      font-size: 1.5em;
-  }
 
-  p {
-      margin: 1em 0;
-  }
+@media screen and (min-width:768px) {
 
-  img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 1em auto;
-  }
+article {
+    max-width:80%;
+    margin:0 auto;
+}
 
-  blockquote {
-      font-style: italic;
-      margin: 1.5em;
-      padding: 1em;
-      border-left: 4px solid;
-  }
+}
 
-  a {
-      text-decoration: none;
-  }
-
-  a:hover {
-      text-decoration: underline;
-  }
-
-  /* Layout Adjustment for Browsers */
-  @media screen and (min-width: 768px) {
-      article {
-          max-width:80%;
-          margin: 0 auto;
-      }
-  }
 </style>
+
+
+
 <p class="blank-block"></p>
-<h1 style="text-align: center; margin-bottom: 5px;">=][=</h1>
+
+<h1 style="text-align:center;margin-bottom:5px;">
+=][=
+</h1>
+
 <p class="blank-block"></p>
+
+
 
 <aside class="story-sidebar">
-    
-    
-    
+
+
+
+
+
+
+
+<h4>Content</h4>
+
+
+<div class="story-progress">
+    <div class="story-progress-fill"></div>
+</div>
+
+
+<nav class="story-nav"></nav>
+
 
 <br>
 
-    <h4 style="margin-bottom: 10px;">Content</h4>
 
-    <div class="story-progress">
-        <div class="story-progress-fill"></div>
-    </div>
+<span class="reading-time">
+⏱ 1 min read
+</span>
 
-    <nav class="story-nav"></nav>
-    <br>
-    <span class="reading-time" style="margin-top: 10px;">
-    ⏱ 1 min read
-    </span>
+
 </aside>
 
+
+
+<aside class="suggestion-sidebar">
+
+<h4>Explore</h4>
+
+
+<nav class="suggestion-nav">
+
+
+
+
+
+
+<a href="/2026/07/18/ferrifractor-cartel.html" class="suggestion-item">
+
+<span class="suggestion-title">
+The Ferrifractor Cartel
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 13 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/07/12/the-dreadclops.html" class="suggestion-item">
+
+<span class="suggestion-title">
+The Dreadclops
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 37 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/07/11/too-many-eyes.html" class="suggestion-item">
+
+<span class="suggestion-title">
+Too Many Eyes
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 1 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/07/08/rip-john-blanche.html" class="suggestion-item">
+
+<span class="suggestion-title">
+Rest in Peace: John Blanche
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 2 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a href="/2026/06/28/no-longer.html" class="suggestion-item">
+
+<span class="suggestion-title">
+No Longer
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 1 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="/2026/01/01/test-site-13.html" class="suggestion-item">
+
+<span class="suggestion-title">
+Test Site 13
+</span>
+
+
+
+
+
+
+
+
+
+<small class="suggestion-time">
+⏱ 1 min read
+</small>
+
+
+</a>
+
+
+
+
+
+
+</nav>
+
+</aside>
+
+
+
 <script>
-const links = document.querySelectorAll(".story-nav a");
+
+const links = document.querySelectorAll('.story-sidebar .story-nav a');
+
 </script>
   </div>
   

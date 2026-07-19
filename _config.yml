@@ -23,7 +23,7 @@ gallery_tags:
   - vehicles
 
 og_image:
-  collections: ["posts", "pages"]
+  collections: []
   domain: "beta.bl3ak.com"
   canvas:
     width: 1200

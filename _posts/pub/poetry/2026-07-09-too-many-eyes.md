@@ -9,7 +9,7 @@ published: true
 
 ![Too Many Eyes](/assets/img/too-many-eyes.png)
 
-<hr>
+<br>
 
 <p style="text-align:center">How many eyes is too many eyes?</p>
 

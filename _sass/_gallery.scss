@@ -8,34 +8,49 @@
 .gallery-item {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
 
     flex: 1 1 calc(33.333% - 1rem);
     max-width: calc(33.333% - 1rem);
 
-    aspect-ratio: 1 / 1;      // Makes every thumbnail square
+    aspect-ratio: 1 / 1;
     box-sizing: border-box;
+
+    border-radius: 10px;
+
+    background: rgba(20,20,20,.25);
+    border: 1px solid rgba(255,255,255,.06);
+
+    box-shadow: 0 6px 20px rgba(0,0,0,.25);
 
     transition:
         transform .3s ease,
-        box-shadow .3s ease;
+        box-shadow .3s ease,
+        border-color .3s ease;
 }
 
 .gallery-item img {
     display: block;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 
     filter: grayscale(100%);
+
     transition:
         filter .5s ease,
         transform .5s ease;
 }
 
-.gallery-item:hover {
+.gallery-item:hover,
+.gallery-item.active {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+
+    border-color: rgba($primary-color,.25);
+
+    box-shadow:
+        0 12px 28px rgba(0,0,0,.4);
 }
 
 .gallery-item:hover img,
@@ -44,51 +59,74 @@
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .gallery-item {
-        flex: 1 1 calc(50% - 1rem);
-        max-width: calc(50% - 1rem);
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-}
+/* ============================= */
+/* Gallery Overlay               */
+/* ============================= */
 
 .overlay {
     position: absolute;
     inset: 0;
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 
-    background: rgba(0, 0, 0, 0.55);
+    padding: 1.25rem;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.25) 45%,
+        rgba(0,0,0,0)
+    );
+
     opacity: 0;
 
-    transition: opacity .4s ease;
+    transition: opacity .35s ease;
 }
 
 .overlay h3 {
-    color: white;
-    text-align: center;
     margin: 0;
-    padding: 1rem;
-    font-size: 1.3rem;
+
+    color: white;
+
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 600;
+
+    text-shadow: 0 2px 10px rgba(0,0,0,.8);
 }
 
-.gallery-item:hover .overlay {
+.gallery-item:hover .overlay,
+.gallery-item.active .overlay {
     opacity: 1;
 }
+
+/* ============================= */
+/* Responsive                    */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .gallery-item {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+}
+
+/* ============================= */
+/* Archive Tags                  */
+/* ============================= */
 
 .archive-tags {
 
@@ -99,29 +137,26 @@
     border: 1px solid rgba(255,255,255,.08);
     border-radius: 10px;
 
-    box-shadow:
-        0 10px 30px rgba(0,0,0,.35);
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
 
     padding: 1.25rem;
 
     h3 {
-
         margin: 0 0 1rem;
+
         text-transform: uppercase;
         letter-spacing: .08em;
-
     }
 
     ul {
-
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
         display: flex;
         flex-wrap: wrap;
         gap: .75rem;
 
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
     }
 
     .tag-item {
@@ -138,8 +173,7 @@
             color: rgba(255,255,255,.85);
             text-decoration: none;
 
-            transition:
-                color .3s ease;
+            transition: color .3s ease;
 
             &::after {
 
@@ -160,23 +194,17 @@
             }
 
             &:hover {
-
-                color: lighten($primary-color, 25%);
-
+                color: lighten($primary-color,25%);
             }
 
             &:hover::after,
             &.active::after {
-
                 width: 100%;
-
             }
 
             &.active {
-
                 color: white;
                 font-weight: 600;
-
             }
 
         }
@@ -189,11 +217,12 @@
     content: "++ ";
 }
 
-//
-// POST GALLERY MODAL
-//
+/* ============================= */
+/* Gallery Modal                 */
+/* ============================= */
 
 .gallery-modal {
+
     display: none;
 
     position: fixed;
@@ -204,7 +233,14 @@
     align-items: center;
     justify-content: center;
 
-    background: rgba(0,0,0,0.92);
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(20,20,20,.92),
+            rgba(0,0,0,.97)
+        );
+
+    backdrop-filter: blur(4px);
 }
 
 .gallery-modal.open {
@@ -212,20 +248,19 @@
 }
 
 .gallery-modal img {
+
     max-width: 90vw;
     max-height: 90vh;
 
     object-fit: contain;
 
-    // Override thumbnail effects
     filter: none;
     transform: none;
 }
 
-
-//
-// MODAL BUTTONS
-//
+/* ============================= */
+/* Modal Controls                */
+/* ============================= */
 
 .gallery-close,
 .gallery-prev,
@@ -233,24 +268,30 @@
 
     position: absolute;
 
-    border: none;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 8px;
 
-    background: rgba(0,0,0,0.5);
+    background: rgba(20,20,20,.65);
+    backdrop-filter: blur(8px);
 
     color: white;
 
     cursor: pointer;
 
-    transition: background .2s ease;
-}
+    transition:
+        background .25s ease,
+        border-color .25s ease;
 
+}
 
 .gallery-close:hover,
 .gallery-prev:hover,
 .gallery-next:hover {
-    background: rgba(255,255,255,0.2);
-}
 
+    background: rgba($primary-color,.25);
+    border-color: rgba($primary-color,.5);
+
+}
 
 .gallery-close {
 
@@ -263,7 +304,6 @@
     font-size: 3rem;
 
 }
-
 
 .gallery-prev,
 .gallery-next {
@@ -279,13 +319,24 @@
 
 }
 
-
 .gallery-prev {
     left: 20px;
 }
-
 
 .gallery-next {
     right: 20px;
 }
 
+.gallery-text-block {
+
+    flex: 0 0 100%;
+
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 5rem auto;
+
+    text-align: center;
+
+}

@@ -47,7 +47,7 @@ published: true
 
 *The cells occupant was brusquely informed to stand in the corner of their cell by one of the burly Stormtroopers while they restrained them from behind. They complied with the Stormtroopers without protest, and I thought I saw the shape of an enormous man moving in the shadows of the dark cell. Phelps’ adjutant had vanished, and I looked around for someone of authority, I wasn’t prepared to carry out an interrogation and the thought of being left alone in this unmarked cell with whatever was inside it didn’t fill me with optimism. To my relief I spotted the familiar face of one of the Junior Interrogators, Maxilla, sauntering towards me with an air of confidence and authority. We exchanged greetings, and I was informed that I was to attend the interrogation but was to remain silent and observe. Instructions I was glad to receive.*
 
-### The Interrogation: Part II
+### The Interrogation: II
 
 *The Stormtroopers had restrained the occupant of the cell, they were shackled and manacled to a large metal beam, their movement restricted to being able to move their head and speak. We entered the cell, and I was immediately drawn to the sheer size of the occupant. If Maxilla had told me that we were interrogating an Ogryn in that cell, I’d have believed him, the man was enormous. His arms were like tree trunks that had been attached to a building, each one looked like it could snap me in half. He was quiet though, belying his size, he brooded in his shackles and stared down at the floor, not deigning to acknowledge the two new occupants of the cell.*
 
@@ -175,7 +175,7 @@ published: true
 
 *”Can you tell me about what happened to Ms. Wallace, Tobias?*”
 
-### The Interrogation: Part III
+### The Interrogation: III
 
 *There was no answer from Peppana, but after a few moments I made out a sound that I never thought I’d hear from someone so intimidating. The giant was whimpering quietly. I made out tears in his eyes and there was a noticeable quiver to his lips. We sat in silence for a little while, the only sound in the cell were the small noises coming from the giant.*
 

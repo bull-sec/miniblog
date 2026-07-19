@@ -3,39 +3,101 @@ layout: default
 pagination:
   enabled: true
 ---
+
 <br>
+
 <article>
-  <header>
-      <h1 style="text-align: center;">{{ page.title }}</h1>
-      <p style="text-align: center;" class="post-meta"><i>++ First transmitted: {{ page.date | date: "%B %-d, %Y, %H:%M" }} ++</i></p>
 
-  </header>
+<header>
+    <h1 style="text-align: center;">{{ page.title }}</h1>
 
-  <main>
-    <hr>
-      {{ content }}
-  </main>
-</article>
+    <p style="text-align: center;" class="post-meta">
+        <i>
+        ++ First transmitted: {{ page.date | date: "%B %-d, %Y, %H:%M" }} ++
+        </i>
+    </p>
+</header>
+
+
+<main>
+
+<hr>
 
 {% if page.gallery %}
-<div class="gallery-container">
 
-  {% assign gallery_images = site.static_files
-    | where_exp: "file", "file.path contains page.gallery" %}
+    {% assign sections = content | split: '<h3' %}
 
-  {% for image in gallery_images %}
-    <div class="gallery-item">
-      <img
-        src="{{ image.path | relative_url }}"
-        alt="{{ page.title }} image {{ forloop.index }}"
-        loading="lazy"
-        class="gallery-image">
+    {{ sections[0] }}
+
+    {% assign gallery_images = site.static_files
+        | where_exp: "file", "file.path contains page.gallery" %}
+
+    {% assign section_index = 1 %}
+
+
+    <div class="gallery-container">
+
+    {% for image in gallery_images %}
+
+        <div class="gallery-item">
+
+            <img
+                src="{{ image.path | relative_url }}"
+                alt="{{ page.title }} image {{ forloop.index }}"
+                loading="lazy"
+                class="gallery-image">
+
+        </div>
+
+
+        {% assign remainder = forloop.index | modulo: 9 %}
+
+
+        {% if remainder == 0 and sections[section_index] %}
+
+            </div>
+
+
+            <div class="gallery-text-block">
+
+                {{ '<h3' | append: sections[section_index] }}
+
+            </div>
+
+
+            {% assign section_index = section_index | plus: 1 %}
+
+
+            {% unless forloop.last %}
+            <div class="gallery-container">
+            {% endunless %}
+
+
+        {% endif %}
+
+
+    {% endfor %}
+
+
     </div>
-  {% endfor %}
 
-</div>
+
+{% else %}
+
+    {{ content }}
+
+{% endif %}
+
+</main>
+
+</article>
+
+
+
+{% if page.gallery %}
 
 <div id="gallery-modal" class="gallery-modal">
+
     <button class="gallery-close">&times;</button>
 
     <button class="gallery-prev">&#10094;</button>
@@ -43,103 +105,148 @@ pagination:
     <img id="gallery-modal-image">
 
     <button class="gallery-next">&#10095;</button>
+
 </div>
 
 {% endif %}
 
+
+
 <div id="image-modal" class="image-modal">
+
     <span class="close">&times;</span>
 
     <img id="modal-image" src="" alt="">
+
 </div>
 
+
+
 <style>
-  /* Global Styles */
-  body {
-      /* font-family: Georgia, "Times New Roman", Times, serif; */
-      font-size: 16px;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-  }
 
-  h1, h2, h3 {
-      /* font-family: Arial, Helvetica, sans-serif; */
-      margin: 1.5em 0 0.5em;
-  }
+body {
+    font-size:16px;
+    line-height:1.6;
+    margin:0;
+    padding:0;
+}
 
-  h1 {
-      font-size: 2.5em;
-  }
+h1,h2,h3 {
+    margin:1.5em 0 .5em;
+}
 
-  h2 {
-      font-size: 2em;
-  }
+img {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:1em auto;
+}
 
-  h3 {
-      font-size: 1.5em;
-  }
 
-  p {
-      margin: 1em 0;
-  }
+@media screen and (min-width:768px) {
 
-  img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 1em auto;
-  }
+article {
+    max-width:80%;
+    margin:0 auto;
+}
 
-  blockquote {
-      font-style: italic;
-      margin: 1.5em;
-      padding: 1em;
-      border-left: 4px solid;
-  }
+}
 
-  a {
-      text-decoration: none;
-  }
-
-  a:hover {
-      text-decoration: underline;
-  }
-
-  /* Layout Adjustment for Browsers */
-  @media screen and (min-width: 768px) {
-      article {
-          max-width:80%;
-          margin: 0 auto;
-      }
-  }
 </style>
+
+
+
 <p class="blank-block"></p>
-<h1 style="text-align: center; margin-bottom: 5px;">{{ site.title }}</h1>
+
+<h1 style="text-align:center;margin-bottom:5px;">
+{{ site.title }}
+</h1>
+
 <p class="blank-block"></p>
+
+
 
 <aside class="story-sidebar">
-    {% assign words = content | number_of_words %}
-    {% assign minutes = words | divided_by: 200 %}
-    {% if minutes < 1 %}
-    {% assign minutes = 1 %}
-    {% endif %}
+
+{% assign words = content | number_of_words %}
+{% assign minutes = words | divided_by:200 %}
+
+{% if minutes < 1 %}
+{% assign minutes = 1 %}
+{% endif %}
+
+
+<h4>Content</h4>
+
+
+<div class="story-progress">
+    <div class="story-progress-fill"></div>
+</div>
+
+
+<nav class="story-nav"></nav>
+
 
 <br>
 
-    <h4 style="margin-bottom: 10px;">Content</h4>
 
-    <div class="story-progress">
-        <div class="story-progress-fill"></div>
-    </div>
+<span class="reading-time">
+⏱ {{ minutes }} min read
+</span>
 
-    <nav class="story-nav"></nav>
-    <br>
-    <span class="reading-time" style="margin-top: 10px;">
-    ⏱ {{ minutes }} min read
-    </span>
+
 </aside>
 
+
+
+<aside class="suggestion-sidebar">
+
+<h4>Explore</h4>
+
+
+<nav class="suggestion-nav">
+
+
+{% for post in site.posts limit:10 %}
+
+{% unless post.url == page.url %}
+
+<a href="{{ post.url }}" class="suggestion-item">
+
+<span class="suggestion-title">
+{{ post.title }}
+</span>
+
+
+{% assign words = post.content | number_of_words %}
+{% assign minutes = words | divided_by:200 %}
+
+
+{% if minutes < 1 %}
+{% assign minutes = 1 %}
+{% endif %}
+
+
+<small class="suggestion-time">
+⏱ {{ minutes }} min read
+</small>
+
+
+</a>
+
+{% endunless %}
+
+{% endfor %}
+
+
+</nav>
+
+</aside>
+
+
+
 <script>
-const links = document.querySelectorAll(".story-nav a");
+
+const links = document.querySelectorAll('.story-sidebar .story-nav a');
+
 </script>
