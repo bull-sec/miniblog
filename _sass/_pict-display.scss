@@ -59,3 +59,14 @@
     border:1px solid;
     padding:.5rem 1rem;
 }
+
+.status-online,
+.status-active {
+    color: #3cff72;
+    text-shadow: 0 0 8px rgba(60,255,114,.6);
+}
+
+.status-danger {
+    color: #ff3c3c;
+    text-shadow: 0 0 8px rgba(255,60,60,.6);
+}
