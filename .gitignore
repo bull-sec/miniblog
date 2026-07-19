@@ -3,9 +3,15 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Image backups
+_image-backup/
+
+# Ruby
 *.gem
 .bundle
 Gemfile.lock
 vendor/
-.DS_Store
 
+# OS
+.DS_Store
