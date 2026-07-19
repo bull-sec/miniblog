@@ -1,7 +1,7 @@
 title: =][=
 url: "https://beta.bl3ak.com"
 baseurl: ""
-description: "Dive into grimdark Warhammer projects, miniature painting, conversions, stories, and poetry from a 20 year hobby veteran. Explore the gallery and join the descent into darkness."
+description: "Dive into grimdark Warhammer projects, miniature painting, conversions, stories, and poetry from a 20 year hobby veteran. Join the descent into darkness."
 plugins:
   - jekyll-paginate-v2
   - jekyll-sass-converter
