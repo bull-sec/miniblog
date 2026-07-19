@@ -11,6 +11,7 @@ group :jekyll_plugins do
   gem "bigdecimal"
   gem "jekyll-og-image"
   gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
 end
 
 # gem "rails"

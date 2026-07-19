@@ -9,6 +9,7 @@ plugins:
   - jekyll-feed
   - jekyll-og-image
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 pagination:
   enabled: false
@@ -23,7 +24,7 @@ gallery_tags:
   - vehicles
 
 og_image:
-  collections: []
+  collections: [posts]
   domain: "beta.bl3ak.com"
   canvas:
     width: 1200
