@@ -11,7 +11,7 @@ tags: [renegades, chaos, 40k, astartes, inq28]
 
 asfasifhaosifhaso;ifa;sfi
 
-![Krieg](/assets/img/krieg.jpg)
+![Krieg](/assets/images/krieg.webp)
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut urna eleifend, euismod leo sed, ullamcorper est. Maecenas a pharetra nibh. Aliquam mattis eros in eros elementum vulputate. Suspendisse potenti. Praesent eros erat, rutrum maximus posuere eget, pharetra ut sapien. Nulla facilisi. Aliquam erat volutpat. Integer fringilla erat at lorem rhoncus, sit amet lacinia orci viverra. Aliquam dapibus, elit ut interdum feugiat, erat nisi mattis quam, non molestie velit massa in tortor.
 

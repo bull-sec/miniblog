@@ -3,7 +3,7 @@ layout: post
 title: Verminous Rat Things
 date: 2026-01-01
 tags: [skaven, aos, grimdark, mordheim, pestilens]
-image: /assets/img/blanche4.png
+image: /assets/images/blanche4.webp
 gallery: /assets/images/gallery/skaven
 published: false
 ---

@@ -9,7 +9,7 @@ tags:
   - nurgle
   - deathguard
   - 40k
-image: /assets/img/warhammer-40k-death-guard-collection-banner.png
+image: /assets/images/warhammer-40k-death-guard-collection-banner.webp
 gallery: /assets/images/gallery/death-guard
 description: Showcasing a Custom Death Guard Warband for Warhammer 40,000
 og-image:
@@ -28,7 +28,7 @@ Praesent tristique nec lorem eget convallis. Aliquam quis posuere urna. Nam tris
 
 Aenean facilisis malesuada sollicitudin. Aliquam posuere interdum elit eget accumsan. Vivamus sagittis lectus urna, eget semper nisl ultrices in. Nunc nisi magna, faucibus eu lacus ut, vestibulum lacinia enim. Duis turpis neque, efficitur eget sapien pharetra, porta hendrerit turpis. Pellentesque fermentum neque ante, placerat volutpat eros faucibus quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vehicula magna libero, sit amet condimentum ante posuere sed. Nam fringilla, libero in pretium rhoncus, eros eros mattis diam, a vestibulum mi dui id tellus. Ut scelerisque ut felis ut lacinia. Fusce et mi eget elit aliquam faucibus id sit amet nisi. Ut id pellentesque ante, a mattis leo. Suspendisse potenti. Integer egestas consequat dui. Cras sed justo sed odio gravida tristique eget et tellus. Morbi eget interdum diam. 
 
-![Deathguard](/assets/img/warhammer-40k-death-guard-collection-banner.png)
+![Deathguard](/assets/images/warhammer-40k-death-guard-collection-banner.webp)
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis dui eu mauris luctus congue. Suspendisse tempor molestie laoreet. Proin ut mauris placerat, posuere augue quis, ultricies libero. Ut facilisis justo quam, et tristique eros consectetur non. Fusce luctus elit a turpis iaculis aliquet. Morbi non urna vel massa congue aliquet. Vivamus cursus, magna ac bibendum commodo, urna urna accumsan lorem, at rhoncus turpis nulla ullamcorper justo. Mauris ac sem pulvinar massa scelerisque dapibus. Quisque vestibulum blandit eros, ut finibus metus dapibus sit amet.
 

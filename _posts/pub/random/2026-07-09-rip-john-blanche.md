@@ -3,13 +3,13 @@ layout: post
 title: "Rest in Peace: John Blanche"
 date: 2026-07-08
 tags: [grimdark, blanchitsu, warhammer, featured]
-image: /assets/img/blanche2.jpg
+image: /assets/images/blanche2.webp
 description: A short tribute to painting legend John Blanche, who passed away this year.
 published: true
 pinned: true
 ---
 
-![John Blanche's Iconic Sister of Battle](/assets/img/blanche-sob.png)
+![John Blanche's Iconic Sister of Battle](/assets/images/blanche-sob.webp)
 
 >  John's Iconic Sister of Battle Artwork
 
@@ -23,7 +23,7 @@ John Blanche will forever live on through his art and the inspiration he has pro
 
 ---
 
-![Rest in Peace John Blanche](/assets/img/blanche-tech-priest.png)
+![Rest in Peace John Blanche](/assets/images/blanche-tech-priest.webp)
 
 > John Blanche's take on a Priest of Mars, one of my personal favourites
 
@@ -37,6 +37,6 @@ John Blanche's work has had a major influence on the Warhammer hobby as a whole,
 
 Most of this would not have happened without the inspiration from John, and in turn what he inspired in others. He may not have had a specific direct influence on me that I could pin down aside from the general "I like the grimdark vibe", but I can almost certainly pin down inspiration from others, who I know in turn have been influenced by John's work. Hopefully I can carry on that little cycle with my own little contributions to the hobby.
 
-![Rest in Peace](/assets/img/jb.png)
+![Rest in Peace](/assets/images/jb.webp)
 
 > The Bell of Lost Souls rings out one more time.

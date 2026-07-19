@@ -3,11 +3,11 @@ layout: post
 title: Too Many Eyes
 date: 2026-07-11
 tags: [horror, poetry, grimdark]
-image: /assets/img/too-many-eyes.png
+image: /assets/images/too-many-eyes.webp
 published: true
 ---
 
-![Too Many Eyes](/assets/img/too-many-eyes.png)
+![Too Many Eyes](/assets/images/too-many-eyes.webp)
 
 <br>
 

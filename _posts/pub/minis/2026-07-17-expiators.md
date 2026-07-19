@@ -9,7 +9,7 @@ tags:
   - expiators
   - astartes
   - 40k
-image: /assets/img/krieg.jpg
+image: /assets/images/krieg.webp
 gallery: /assets/images/gallery/death-guard
 description: Showcasing a Custom Renegade Astartes Warband for Warhammer 40,000
 og-image:

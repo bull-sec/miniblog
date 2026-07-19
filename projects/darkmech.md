@@ -7,13 +7,13 @@ date:   2025-01-01 12:06:00 +0000
 tags: [darkmechanicum, admech, 40k, inq28]
 ---
 
-![John Blanche's Tech Priest](/assets/img/blanche-tech-priest.png)
+![John Blanche's Tech Priest](/assets/images/blanche-tech-priest.webp)
 
 > "Those fools and their talk of spirits and rites; technology is cause and consequence, mechanism and effect, and should not be so restrained and mishandled as those red-robed simpletons would believe."
 
     — Rephenesti Korvane, Heretek
 
-![Something, something, dark side, something](/assets/img/mechanicus.jpg)
+![Something, something, dark side, something](/assets/images/mechanicus.webp)
 
 ### Thulia
 
@@ -43,7 +43,7 @@ In scelerisque metus nec nunc sollicitudin maximus. Aliquam tempus ipsum vel lor
 
 Sed faucibus faucibus faucibus. Morbi ut nulla et ante consectetur convallis. Sed nisl nunc, bibendum vel sagittis ut, porta et est. Nulla magna libero, congue ac leo lacinia, vestibulum ullamcorper elit. Etiam suscipit tellus id urna consectetur, efficitur hendrerit lacus molestie. Duis non tincidunt urna. Phasellus id est ut tellus imperdiet pretium. Nullam sit amet lacinia tellus, et sollicitudin arcu. Aliquam sagittis id felis quis rutrum. Donec ut elit quis turpis pretium consectetur. Nunc non tellus mattis, congue nibh ac, suscipit nibh. Mauris accumsan urna eget justo maximus, nec eleifend erat condimentum. Fusce feugiat fringilla justo. 
 
-![Something, something, dark side, something](/assets/img/mechanicus.jpg)
+![Something, something, dark side, something](/assets/images/mechanicus.webp)
 
 ### The Cleansing
 

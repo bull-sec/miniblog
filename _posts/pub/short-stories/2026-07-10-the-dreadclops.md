@@ -3,11 +3,11 @@ layout: post
 title: The Dreadclops
 date: 2026-07-12 T16:00
 tags: [grimdark, 40k, short-story]
-image: /assets/img/dreadclops.png
+image: /assets/images/dreadclops.webp
 published: true
 ---
 
-![The Dreadclops](/assets/img/dreadclops.png)
+![The Dreadclops](/assets/images/dreadclops.webp)
 
 > *"It walks like a man, until it doesn't m'lord. All of a sudden it moves like the devil itself, so fast it were m'lord, if I hadn't seen what it done to poor Harry I wouldn't ave believed it. No m'lord, I don't suppose it did see me watch, or if it did it didn't seem to care none. If I may m'lord, I don't claim to be an expert about such matters, I leave that to gentlemen like yerself m'lord, but I will venture that when you rip it's helmet off, you're not going to be looking at anything human.*
 

@@ -5,7 +5,7 @@ permalink: /about
 date: 2026-07-01
 ---
 
-![Krieg Trooper](/assets/img/krieg.jpg)
+![Krieg Trooper](/assets/images/krieg.webp)
 
 ### Welcome 
 
