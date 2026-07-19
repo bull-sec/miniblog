@@ -21,7 +21,7 @@ Write your opening paragraph here.
 
 Write the body of your post here.
 
-![Template Test](/images/background.webp)
+![Template Test](/assets/images/background.webp)
 
 ## Conclusion
 

@@ -26,6 +26,8 @@ gallery_tags:
 jekyll-og-image:
   collections:
     - posts
+    - default
+    - gallery
   domain: "beta.bl3ak.com"
   canvas:
     width: 1200

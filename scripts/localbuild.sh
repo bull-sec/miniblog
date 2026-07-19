@@ -2,47 +2,34 @@
 
 set -e
 
-echo "=== Cleaning previous build ==="
+echo "Cleaning site..."
 rm -rf _site/*
 
-IMAGE_DIR="assets/images"
-BACKUP_DIR="_image-backup"
+echo "Converting images..."
 
-echo "=== Creating backup directory ==="
-mkdir -p "$BACKUP_DIR"
+find assets/images -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | while read img; do
 
-echo "=== Converting images to WebP ==="
+    out="${img%.*}.webp"
 
-find "$IMAGE_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | while read -r file
-do
-    output="${file%.*}.webp"
-
-    if [ ! -f "$output" ]; then
-        echo "Converting: $file"
-        cwebp -q 85 "$file" -o "$output"
-    else
-        echo "Skipping existing: $output"
+    if [ ! -f "$out" ]; then
+        echo "Converting $img"
+        cwebp -q 85 "$img" -o "$out"
     fi
+
 done
 
+echo "Backing up originals..."
 
-echo "=== Backing up originals ==="
+mkdir -p _image-backup
 
-find "$IMAGE_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | while read -r file
-do
-    relative="${file#$IMAGE_DIR/}"
-
-    mkdir -p "$BACKUP_DIR/$(dirname "$relative")"
-
-    cp "$file" "$BACKUP_DIR/$relative"
-done
+find assets/images -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -exec cp --parents {} _image-backup/ \;
 
 
-echo "=== Removing non-WebP images ==="
+echo "Removing originals..."
 
-find "$IMAGE_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -delete
+find assets/images -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -delete
 
 
-echo "=== Starting Jekyll ==="
+echo "Building Jekyll..."
 
-jekyll serve --incremental --watch
+jekyll serve --watch --incremental
