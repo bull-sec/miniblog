@@ -1,0 +1,61 @@
+.pict-display {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+    border: 1px solid rgba(180,180,120,.4);
+    background:
+        linear-gradient(
+            rgba(0,0,0,.85),
+            rgba(0,0,0,.95)
+        );
+    font-family: monospace;
+    position: relative;
+}
+
+.pict-display::before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(255,255,255,.03) 4px
+    );
+    pointer-events:none;
+}
+
+.pict-header {
+    letter-spacing: .2em;
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.pict-display h1 {
+    text-align:center;
+    font-size:4rem;
+}
+
+.pict-body {
+    max-width:700px;
+    margin:auto;
+}
+
+.pict-status {
+    display:flex;
+    justify-content:space-around;
+    margin-top:2rem;
+    font-size:.8rem;
+}
+
+.pict-links {
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    margin-top:2rem;
+}
+
+.pict-links a {
+    border:1px solid;
+    padding:.5rem 1rem;
+}
