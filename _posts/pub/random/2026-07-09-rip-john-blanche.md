@@ -27,9 +27,9 @@ John Blanche will forever live on through his art and the inspiration he has pro
 
 > John Blanche's take on a Priest of Mars, one of my personal favourites
 
-<h1 style="text-align:center; margin-bottom:5px;">
+<h2 style="text-align:center; margin-bottom:5px;">
   {{ site.title }}
-</h1>
+</h2>
 
 ### The First Influencer
 
