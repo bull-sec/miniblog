@@ -1,7 +1,7 @@
 title: =][=
 url: "https://beta.bl3ak.com"
 baseurl: ""
-description: "A personal blog exploring the darker side of the Warhammer Universe, from a 20 year veteran of the hobby, covering everything from miniature painting, and conversions, to grimdark projects such as stories and poetry."
+description: "A 20+ year veteran of the Warhammer Universe, exploring the darker side of the hobby, covering everything from miniature painting, and conversions, to grimdark projects such as stories and poetry."
 
 plugins:
   - jekyll-paginate-v2
