@@ -1,7 +1,7 @@
 title: =][=
 url: "https://beta.bl3ak.com"
 baseurl: ""
-description: "A hobby blog covering Warhammer, painting, conversions, and grimdark projects."
+description: "A hobby blog covering the darker aspects of Warhammer, painting, conversions, and grimdark projects."
 
 plugins:
   - jekyll-paginate-v2
