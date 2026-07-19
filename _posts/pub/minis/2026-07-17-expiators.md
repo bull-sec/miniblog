@@ -12,7 +12,7 @@ tags:
 image: /assets/images/krieg.webp
 gallery: /assets/images/gallery/death-guard
 description: Showcasing a Custom Renegade Astartes Warband for Warhammer 40,000
-og-image:
+og-image: /assets/images/og/krieg.jpg
 published: false
 ---
 

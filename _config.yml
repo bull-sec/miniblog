@@ -23,8 +23,9 @@ gallery_tags:
   - sci-fi
   - vehicles
 
-og_image:
-  collections: [posts]
+jekyll-og-image:
+  collections:
+    - posts
   domain: "beta.bl3ak.com"
   canvas:
     width: 1200
